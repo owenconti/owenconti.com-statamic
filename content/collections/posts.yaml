@@ -1,0 +1,14 @@
+title: Posts
+route: 'posts/{slug}'
+template: default
+layout: default
+blueprints:
+  - post
+structure: posts
+taxonomies:
+  - categories
+revisions: false
+date: true
+date_behavior:
+  past: public
+  future: private
