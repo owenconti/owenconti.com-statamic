@@ -1,4 +1,7 @@
-let mix = require('laravel-mix');
+const mix = require('laravel-mix');
+const tailwindcss = require('tailwindcss');
+
+require('laravel-mix-purgecss');
 
 /*
  |--------------------------------------------------------------------------
@@ -11,19 +14,19 @@ let mix = require('laravel-mix');
  |
  */
 
-mix.js('resources/js/site.js', 'public/js')
-   .sass('resources/sass/site.scss', 'public/css');
+mix.copy('resources/images', 'public/images')
+  .copy('resources/fonts', 'public/fonts')
+  .js('resources/js/app.js', 'public/js')
+  .postCss('resources/css/app.css', 'public/css', [
+    require('postcss-import'),
+    tailwindcss('./tailwind.config.js'),
+    require('postcss-nested')
+  ])
+  .options({
+    processCssUrls: false
+  })
+  .version();
 
-
-/*
- |--------------------------------------------------------------------------
- | Statamic Control Panel Assets
- |--------------------------------------------------------------------------
- |
- | Feel free to add your own JS or CSS to the Statamic Control Panel.
- | https://statamic.dev/extending/control-panel#adding-css-and-js-assets
- |
- */
-
-// mix.js('resources/js/cp.js', 'public/vendor/app/js')
-//    .sass('resources/sass/cp.scss', 'public/vendor/app/css');
+if (mix.inProduction()) {
+  mix.purgeCss();
+}

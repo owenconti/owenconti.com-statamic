@@ -1,0 +1,23 @@
+{{ collection:posts limit="10" paginate="true" as="posts" }}
+    {{ if no_results }}
+        <p>Aww, there are no results.</p>
+    {{ /if }}
+
+    {{ posts }}
+        <article class="mb-4 py-4 border-b border-gray-300">
+            <h3><a href="{{ url }}">{{ title }}</a></h3>
+            <p class="text-sm text-gray-700">{{ date }}</p>
+            <div>{{ content | safe_truncate:300 }}</div>
+        </article>
+    {{ /posts }}
+
+    {{ paginate }}
+        <div class="flex justify-between text-sm">
+          <a href="{{ prev_page }}">⬅ Previous</a>
+  
+          {{ current_page }} of {{ total_pages }} pages
+          (There {{ total_items == 1 ? 'is' : 'are' }} {{ total_items }} {{ 'post' | plural:total_items }})
+          <a href="{{ next_page }}">Next ➡</a>
+        </div>
+    {{ /paginate }}
+{{ /collection:posts }}

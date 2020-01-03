@@ -18,6 +18,8 @@ sections:
             - anchor
             - image
             - table
+            - code
+            - codeblock
           container: assets
           save_html: false
           toolbar_mode: fixed
@@ -30,3 +32,18 @@ sections:
           type: bard
           localizable: false
           display: Content
+      -
+        handle: video
+        field:
+          type: video
+          localizable: false
+          display: Video
+      -
+        handle: category
+        field:
+          max_items: 1
+          mode: select
+          type: taxonomy
+          localizable: false
+          display: Category
+          validate: required

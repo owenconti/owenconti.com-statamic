@@ -1,0 +1,26 @@
+title: 'Contact Form'
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: name
+        field:
+          character_limit: 0
+          type: text
+          localizable: false
+          display: Name
+      -
+        handle: email
+        field:
+          character_limit: 0
+          type: text
+          localizable: false
+          display: Email
+          validate: email
+      -
+        handle: body
+        field:
+          type: textarea
+          localizable: false
+          display: Body

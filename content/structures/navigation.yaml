@@ -1,0 +1,14 @@
+title: Navigation
+collections:
+  - pages
+  - posts
+tree:
+  -
+    title: Home
+    url: /
+  -
+    title: About
+    url: /about
+  -
+    title: Contact
+    url: /contact

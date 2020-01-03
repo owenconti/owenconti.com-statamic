@@ -1,13 +1,15 @@
 title: Posts
 route: 'posts/{slug}'
-template: default
-layout: default
+template: templates/post
+layout: layouts/layout
 blueprints:
   - post
 structure: posts
 taxonomies:
-  - categories
+  - category
 revisions: false
+entry_order:
+  - 00cd941e-b9d6-407a-b1a2-451391033e91
 date: true
 date_behavior:
   past: public

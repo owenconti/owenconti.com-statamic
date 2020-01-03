@@ -1,6 +1,6 @@
 ---
 title: Home
 id: home
-template: home
+template: templates/home
 ---
 Welcome to your new Statamic website.

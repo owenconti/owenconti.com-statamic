@@ -1,0 +1,7 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+
+@import 'highlight.js/styles/nord.css';
+@import './typography.css';
+
+@import 'tailwindcss/utilities';
