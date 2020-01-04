@@ -1,10 +1,20 @@
 <h1>{{ title }}</h1>
 <p class="text-sm text-gray-700 mb-8">{{ date }}</p>
 
-<div>{{ content }}</div>
-
 {{ if video}}
-  <div id="#video" class="my-8" style="position:relative;padding-top:56.25%;">
-    <iframe src="{{ video | embed_url }}" class="absolute top-0 right-0 bottom-0 left-0 w-full h-full"></iframe>
-  </div>
+  <a href="#video" class="block font-normal hover:no-underline border-blue-400 bg-blue-200 text-blue-800 border border-blue-300 rounded mb-10 p-4">
+    👇 Click here to skip to the video attached to this post 👇
+  </a>
 {{ /if }}
+
+{{ content }}
+  {{ if type == "text" }}
+    <div class="text">
+      {{ text }}
+    </div>
+  {{ elseif type == "video" }}
+    <div id="video" class="my-8" style="position:relative;padding-top:56.25%;">
+      <iframe src="{{ video | embed_url }}" class="absolute top-0 right-0 bottom-0 left-0 w-full h-full"></iframe>
+    </div>
+  {{ /if }}
+{{ /content }}

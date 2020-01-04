@@ -1,17 +1,6 @@
-<header class="flex flex-col text-center items-center py-2 mb-8 md:flex-row">
- <a href="/"><img src="/images/ohseemedia-logo.svg" class="h-16"/></a>
- <div class="flex-1 mt-1 md:mt-0 md:text-right">
-  <ul>
-   {{ structure:navigation }}
-   <li class="inline-block ml-4">
-    <a
-     href="{{ url }}"
-     class="text-primary-lighten font-light lowercase tracking-tight hover:underline"
-    >
-     {{ title }}
-    </a>
-   </li>
-   {{ /structure:navigation }}
-  </ul>
- </div>
+<header class="flex flex-col text-center items-center justify-between py-2 mb-8 md:flex-row">
+  <a href="/"><img src="/images/ohseemedia-logo.svg" class="h-16"/></a>
+  <form action="/search">
+    <input class="form-input" type="search" name="q" placeholder="Search..." value="{{ get:q }}">
+  </form>
 </header>

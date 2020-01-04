@@ -1298,7 +1298,7 @@ video {
 }
 
 a {
-  color: #CC3A5A;
+  color: #2A415E;
   font-weight: 600;
 }
 
@@ -1313,10 +1313,15 @@ p {
 
 code {
   font-size: 1rem;
-  background-color: #304B6C;
-  color: #fff;
+  background-color: #F8FAFC;
+  color: #D45974;
   font-size: 0.875rem;
   padding: 0.25rem;
+}
+
+ul li {
+  list-style-type: disc;
+  margin-left: 2rem;
 }
 
 h1 {

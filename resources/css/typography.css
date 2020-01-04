@@ -67,7 +67,7 @@
 }
 
 a {
-  @apply text-secondary font-semibold;
+  @apply text-primary font-semibold;
   &:hover {
     @apply underline;
   }
@@ -78,7 +78,11 @@ p {
 }
 
 code {
-  @apply text-base bg-primary-lighten text-white text-sm p-1;
+  @apply text-base bg-light text-secondary-lighten text-sm p-1;
+}
+
+ul li {
+  @apply list-disc ml-8;
 }
 
 h1 {
