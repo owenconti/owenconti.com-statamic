@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "69a7d3f571141f8ca9737f829a088e5b",
+    "content-hash": "580a84451a3be9a2cf9abf9c2fd91077",
     "packages": [
         {
             "name": "composer/ca-bundle",
@@ -2345,67 +2345,6 @@
             "time": "2019-11-08T13:50:10+00:00"
         },
         {
-            "name": "ohseesoftware/laravel-server-analytics",
-            "version": "2.0.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/ohseesoftware/laravel-server-analytics.git",
-                "reference": "e1aa12ad2989ee0259ce4788c9ff222a953dce27"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/ohseesoftware/laravel-server-analytics/zipball/e1aa12ad2989ee0259ce4788c9ff222a953dce27",
-                "reference": "e1aa12ad2989ee0259ce4788c9ff222a953dce27",
-                "shasum": ""
-            },
-            "require": {
-                "illuminate/support": ">=6",
-                "php": "^7.3"
-            },
-            "require-dev": {
-                "orchestra/testbench": "4.4.*",
-                "php-coveralls/php-coveralls": "^2.2",
-                "phpunit/phpunit": "^8.4",
-                "squizlabs/php_codesniffer": "*"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "OhSeeSoftware\\LaravelServerAnalytics\\LaravelServerAnalyticsServiceProvider"
-                    ],
-                    "aliases": {
-                        "LaravelServerAnalytics": "OhSeeSoftware\\LaravelServerAnalytics\\ServerAnalytics"
-                    }
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "OhSeeSoftware\\LaravelServerAnalytics\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Owen Conti",
-                    "email": "owen@ohseemedia.com",
-                    "role": "Developer"
-                }
-            ],
-            "description": "Server side analytics for your Laravel application or website.",
-            "homepage": "https://github.com/ohseesoftware/laravel-server-analytics",
-            "keywords": [
-                "analytics",
-                "laravel",
-                "laravel-server-analytics",
-                "ohseesoftware"
-            ],
-            "time": "2020-01-04T04:41:17+00:00"
-        },
-        {
             "name": "opis/closure",
             "version": "3.5.1",
             "source": {
@@ -3351,6 +3290,46 @@
                 "statamic"
             ],
             "time": "2019-12-17T21:32:12+00:00"
+        },
+        {
+            "name": "statamic/static-site-generator",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/statamic/static-site-generator.git",
+                "reference": "5b600c5d55c2361701170d2f5c107fb3abe12cd0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/statamic/static-site-generator/zipball/5b600c5d55c2361701170d2f5c107fb3abe12cd0",
+                "reference": "5b600c5d55c2361701170d2f5c107fb3abe12cd0",
+                "shasum": ""
+            },
+            "require": {
+                "statamic/cms": "3.0.*@beta"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^4.0"
+            },
+            "type": "statamic-addon",
+            "extra": {
+                "statamic": {
+                    "name": "Static Site Generator",
+                    "description": "Static Site Generator addon"
+                },
+                "laravel": {
+                    "providers": [
+                        "Statamic\\StaticSite\\ServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Statamic\\StaticSite\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "time": "2019-12-16T15:34:07+00:00"
         },
         {
             "name": "statamic/stringy",
@@ -7454,7 +7433,8 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "statamic/cms": 10
+        "statamic/cms": 10,
+        "statamic/static-site-generator": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,

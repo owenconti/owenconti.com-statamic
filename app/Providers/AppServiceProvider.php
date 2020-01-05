@@ -3,8 +3,6 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
-use OhSeeSoftware\LaravelServerAnalytics\ServerAnalytics;
-use Statamic\Statamic;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -17,13 +15,6 @@ class AppServiceProvider extends ServiceProvider
     {
         // Statamic::script('app', 'cp');
         // Statamic::style('app', 'cp');
-
-        // Do not track `/home` or `/admin/*` routes
-        ServerAnalytics::addRouteExclusions([
-            '/cp',
-            '/cp/*',
-            '/_debugbar/*'
-        ]);
     }
 
     /**
