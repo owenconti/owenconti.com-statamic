@@ -13,6 +13,19 @@ sections:
           display: Category
           validate: required
       -
+        handle: video
+        field:
+          type: video
+          localizable: false
+          display: Video
+          validate: url
+      -
+        handle: excerpt
+        field:
+          type: textarea
+          localizable: false
+          display: Excerpt
+      -
         handle: content
         field:
           buttons:
@@ -42,13 +55,3 @@ sections:
           type: bard
           localizable: false
           display: Content
-          sets:
-            video:
-              display: Video
-              fields:
-                -
-                  handle: video
-                  field:
-                    type: video
-                    localizable: false
-                    display: Video

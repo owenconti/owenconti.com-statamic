@@ -1,5 +1,7 @@
 <article class="mb-4 py-4 border-b border-gray-300">
-  <h3><a href="{{ url }}" class="text-secondary">{{ title }}</a></h3>
+  <h3 class="m-0">
+    <a href="{{ url }}" class="text-secondary">{{ title }}</a>
+  </h3>
   <p class="text-sm text-gray-700">{{ date }}</p>
-  <div>{{ content | text | safe_truncate:300:... }}</div>
+  <div>{{ excerpt | safe_truncate:300:... }}</div>
 </article>
