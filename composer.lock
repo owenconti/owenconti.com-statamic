@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "580a84451a3be9a2cf9abf9c2fd91077",
+    "content-hash": "28b395884c6258b60a237a7032234d62",
     "packages": [
         {
             "name": "composer/ca-bundle",
@@ -2343,6 +2343,67 @@
                 "php"
             ],
             "time": "2019-11-08T13:50:10+00:00"
+        },
+        {
+            "name": "ohseesoftware/laravel-server-analytics",
+            "version": "2.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ohseesoftware/laravel-server-analytics.git",
+                "reference": "e1aa12ad2989ee0259ce4788c9ff222a953dce27"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ohseesoftware/laravel-server-analytics/zipball/e1aa12ad2989ee0259ce4788c9ff222a953dce27",
+                "reference": "e1aa12ad2989ee0259ce4788c9ff222a953dce27",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": ">=6",
+                "php": "^7.3"
+            },
+            "require-dev": {
+                "orchestra/testbench": "4.4.*",
+                "php-coveralls/php-coveralls": "^2.2",
+                "phpunit/phpunit": "^8.4",
+                "squizlabs/php_codesniffer": "*"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "OhSeeSoftware\\LaravelServerAnalytics\\LaravelServerAnalyticsServiceProvider"
+                    ],
+                    "aliases": {
+                        "LaravelServerAnalytics": "OhSeeSoftware\\LaravelServerAnalytics\\ServerAnalytics"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "OhSeeSoftware\\LaravelServerAnalytics\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Owen Conti",
+                    "email": "owen@ohseemedia.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Server side analytics for your Laravel application or website.",
+            "homepage": "https://github.com/ohseesoftware/laravel-server-analytics",
+            "keywords": [
+                "analytics",
+                "laravel",
+                "laravel-server-analytics",
+                "ohseesoftware"
+            ],
+            "time": "2020-01-04T04:41:17+00:00"
         },
         {
             "name": "opis/closure",
