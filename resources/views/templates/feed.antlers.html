@@ -1,0 +1,19 @@
+<rss version="2.0">
+    <channel>
+      <title>Oh See Media</title>
+      <link>{{ "https://ohseemedia.com" | cdata }}</link>
+      <lastBuildDate>{{ collection:posts limit="1" }}{{ date format="r" }}{{ /collection:posts }}</lastBuildDate>
+      <language>en-us</language>
+      <copyright>Copyright {{ current_date format='Y' }}</copyright>
+      <ttl>3600</ttl>
+      {{ collection:posts }}
+      <item>
+          <title>{{ title | cdata }}</title>
+          <link>{{ permalink }}</link>
+          <guid>{{ permalink }}</guid>
+          <pubDate>{{ date format="r" }}</pubDate>
+          <description>{{ content | full_urls | cdata }}</description>
+      </item>
+      {{ /collection:posts }}
+    </channel>
+</rss>
