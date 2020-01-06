@@ -28,5 +28,7 @@ mix.copy('resources/images', 'public/images')
   .version();
 
 if (mix.inProduction()) {
-  mix.purgeCss();
+  mix.purgeCss({
+    whitelistPatterns: [/hljs/]
+  });
 }
