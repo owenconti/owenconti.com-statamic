@@ -1,7 +1,9 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 
+/* purgecss start ignore */
 @import 'highlight.js/styles/night-owl.css';
 @import './typography.css';
+/* purgecss end ignore */
 
 @import 'tailwindcss/utilities';
