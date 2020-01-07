@@ -40,7 +40,7 @@ code {
 }
 
 blockquote {
-  @apply pl-6 py-3 my-6 italic text-gray-800 bg-gray-200 border-l-4 border-secondary-lighten;
+  @apply pl-6 py-3 my-6 text-gray-800 bg-gray-200 border-l-4 border-secondary-lighten;
 
   p {
     @apply m-0 p-0;
