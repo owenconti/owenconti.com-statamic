@@ -9,6 +9,7 @@
 /public/mix-manifest.json
 /storage/*.key
 /vendor
+/users
 /.idea
 /.vscode
 /.vagrant
