@@ -36,7 +36,7 @@ p {
 }
 
 code {
-  @apply text-sm bg-light text-secondary p-1;
+  @apply bg-light text-secondary p-1;
 }
 
 blockquote {
