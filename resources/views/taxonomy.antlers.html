@@ -5,7 +5,11 @@
 
       <div>
         {{ entries }}
-          {{ partial:partials/summary }}
+          {{ if no_results}}
+            <p>There are no posts in this category yet!</p>
+          {{ elseif published }}
+            {{ partial:partials/summary }}
+          {{ /if }}
         {{ /entries }}
       </div>
     </div>
