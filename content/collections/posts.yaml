@@ -1,7 +1,6 @@
 title: Posts
 route: 'posts/{slug}'
 template: templates/post
-layout: layouts/layout
 blueprints:
   - post
 structure: posts

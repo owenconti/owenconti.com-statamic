@@ -1,6 +1,4 @@
 <header class="flex flex-col text-center items-center justify-between py-2 mb-8 md:flex-row">
    <a href="/"><img src="/images/ohseemedia-logo.svg" class="h-16"/></a>
-  <form action="/search">
-    <input class="form-input" type="search" name="q" placeholder="Search..." value="{{ get:q }}">
-  </form>
+   {{ partial:partials/search }}
 </header>

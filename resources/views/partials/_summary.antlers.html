@@ -1,11 +1,11 @@
-<article class="mb-4 py-6 border-b border-gray-300">
+<article class="py-4 border-b border-gray-300">
   <h3 class="m-0">
     <a href="{{ url }}" class="text-secondary">{{ title }}</a>
   </h3>
-  <div class="flex text-sm text-gray-700 justify-between">
+  <div class="text-sm text-gray-700">
     <p class="mb-2">
       <time datetime="{{ date | format:Y-m-d }}">{{ date }}</time>
-      - Posted in {{ category }} <a href="{{ url }}">{{ title }}</a> {{ /category }}
+      - Posted in {{ category }} <a href="/category#{{ slug }}">{{ title }}</a> {{ /category }}
     </p>
   </div>
   <div>{{ excerpt | safe_truncate:300:... }}</div>
