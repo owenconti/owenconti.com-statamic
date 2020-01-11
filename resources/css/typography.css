@@ -40,7 +40,7 @@ p {
 }
 
 code {
-  @apply bg-light text-base text-secondary p-1;
+  @apply bg-light text-xs text-secondary p-1;
 }
 
 blockquote {
