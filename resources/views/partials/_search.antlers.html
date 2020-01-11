@@ -6,7 +6,7 @@
     class="bg-white border border-gray-300 p-2 rounded w-full"
     placeholder="Search..."
   />
-  <div x-show="query" class="absolute bg-white shadow rounded w-full max-w-full opacity-0" :class="{'opacity-100': query}">
+  <div x-show="query" class="absolute bg-white shadow rounded w-full max-w-full" style="display: none;">
     <p x-show="loading" class="py-2 m-0">Loading</p>
     <p x-show="!loading && !resultsHtml" class="py-2 m-0">No results.</p>
     <div x-show="!loading && resultsHtml" x-html="resultsHtml"></div>

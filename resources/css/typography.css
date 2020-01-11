@@ -24,6 +24,10 @@
     url("/fonts/Inter-Bold.woff?v=3.11") format("woff");
 }
 
+.content {
+  @apply text-lg;
+}
+
 a {
   @apply text-primary font-semibold;
   &:hover {
@@ -36,7 +40,7 @@ p {
 }
 
 code {
-  @apply bg-light text-secondary p-1;
+  @apply bg-light text-base text-secondary p-1;
 }
 
 blockquote {
