@@ -29,6 +29,6 @@ mix.copy('resources/images', 'public/images')
 
 if (mix.inProduction()) {
   mix.purgeCss({
-    whitelistPatterns: [/hljs/]
+    whitelistPatterns: [/hljs/, /ais-/]
   });
 }

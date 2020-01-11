@@ -1,3 +1,50 @@
-<form action="/search">
-  <input class="form-input" type="search" name="q" placeholder="Search..." value="{{ get:q }}">
-</form>
+<div class="relative w-64" x-data="initSearch()">
+  <input
+    type="search"
+    x-model="query"
+    x-on:keyup="search()"
+    class="bg-white border border-gray-300 p-2 rounded w-full"
+    placeholder="Search..."
+  />
+  <div x-show="query"class="absolute bg-white shadow rounded w-full max-w-full">
+    <p x-show="!resultsHtml" class="m-0">No results.</p>
+    <div x-show="resultsHtml" x-html="resultsHtml"></div>
+  </div>
+</div>
+
+<script>
+  function initSearch() {
+    return {
+      query: '',
+      resultsHtml: null,
+      search() {
+        if (!this.query) {
+          return;
+        }
+
+        const host = `https://${window.algoliaAppId}-dsn.algolia.net`;
+        const url = `${host}/1/indexes/default?query=${encodeURIComponent(this.query)}`;
+
+        fetch(url, {
+          headers: {
+            'X-Algolia-Application-Id': window.algoliaAppId,
+            'X-Algolia-API-Key': window.algoliaApiKey,
+          }
+        })
+          .then((response) => response.json())
+          .then((data) => {
+            if (data.hits.length) {
+              this.resultsHtml = data.hits.map(({ url, title }) => {
+                return `<a
+                  href="${url}"
+                  class="block px-2 py-3 bg-white text-sm text-left border-b border-gray-300 hover:bg-gray-200 hover:no-underline"
+                >${title}</a>`;
+              }).join('');
+              return;
+            }
+            this.resultsHtml = null;
+          });
+      }
+    };
+  }
+</script>

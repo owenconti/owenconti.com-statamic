@@ -40,7 +40,7 @@ code {
 }
 
 blockquote {
-  @apply pl-6 py-3 my-6 text-gray-800 bg-gray-200 border-l-4 border-secondary-lighten;
+  @apply p-4 my-6 mx-0 text-gray-800 bg-gray-200 border-l-4 border-secondary-lighten;
 
   p {
     @apply m-0 p-0;
@@ -63,4 +63,11 @@ h3 {
 h4 {
   @apply text-base font-bold mt-8 mb-3;
 }
+
+@media (min-width: 768px) {
+  blockquote {
+    @apply ml-10;
+  }
+}
+
 /*! purgecss end ignore */

@@ -26,9 +26,9 @@ return [
     'indexes' => [
 
         'default' => [
-            'driver' => 'local',
+            'driver' => 'algolia',
             'searchables' => ['collection:posts'],
-            'fields' => ['title', 'content'],
+            'fields' => ['title', 'excerpt', 'url'],
         ],
 
         // 'blog' => [

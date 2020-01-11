@@ -29,6 +29,11 @@
       {{ template_content }}
       {{ partial:partials/footer }}
     </div>
+
+    <script>
+      window.algoliaAppId = "{{ env:ALGOLIA_APP_ID }}";
+      window.algoliaApiKey = "{{ env:ALGOLIA_SEARCH }}";
+    </script>
     <script async src="{{ mix src='/js/app.js' }}"></script>
   </body>
 </html>

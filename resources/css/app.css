@@ -3,5 +3,6 @@
 
 @import 'highlight.js/styles/night-owl.css';
 @import './typography.css';
+@import './search.css';
 
 @import 'tailwindcss/utilities';
