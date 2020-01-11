@@ -7,8 +7,9 @@
     placeholder="Search..."
   />
   <div x-show="query"class="absolute bg-white shadow rounded w-full max-w-full">
-    <p x-show="!resultsHtml" class="m-0">No results.</p>
-    <div x-show="resultsHtml" x-html="resultsHtml"></div>
+    <p x-show="loading" class="py-2 m-0">Loading</p>
+    <p x-show="!loading && !resultsHtml" class="py-2 m-0">No results.</p>
+    <div x-show="!loading && resultsHtml" x-html="resultsHtml"></div>
   </div>
 </div>
 
@@ -16,11 +17,14 @@
   function initSearch() {
     return {
       query: '',
+      loading: true,
       resultsHtml: null,
-      search() {
+      search: debounce(function() {
         if (!this.query) {
           return;
         }
+
+        this.loading = true;
 
         const host = `https://${window.algoliaAppId}-dsn.algolia.net`;
         const url = `${host}/1/indexes/default?query=${encodeURIComponent(this.query)}`;
@@ -33,6 +37,8 @@
         })
           .then((response) => response.json())
           .then((data) => {
+            this.resultsHtml = null;
+
             if (data.hits.length) {
               this.resultsHtml = data.hits.map(({ url, title }) => {
                 return `<a
@@ -40,11 +46,11 @@
                   class="block px-2 py-3 bg-white text-sm text-left border-b border-gray-300 hover:bg-gray-200 hover:no-underline"
                 >${title}</a>`;
               }).join('');
-              return;
             }
-            this.resultsHtml = null;
+
+            this.loading = false;
           });
-      }
+      }, 250)
     };
   }
 </script>
