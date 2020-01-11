@@ -44,6 +44,7 @@ return [
         public_path('images') => 'images',
         public_path('fonts')  => 'fonts',
         public_path('assets') => 'assets',
+        public_path('favicon.png') => 'favicon.png',
     ],
 
     'symlinks' => [
