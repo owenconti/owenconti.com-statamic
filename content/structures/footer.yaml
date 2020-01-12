@@ -1,11 +1,14 @@
 title: Footer
 tree:
   -
+    title: Analytics
+    url: /analytics
+  -
+    title: RSS
+    url: /feed
+  -
     title: Twitter
     url: 'https://twitter.com/owenconti'
   -
     title: YouTube
     url: 'https://youtube.com/owenconti'
-  -
-    title: RSS
-    url: /feed

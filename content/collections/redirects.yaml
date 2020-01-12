@@ -1,0 +1,7 @@
+title: Redirects
+route: '{slug}'
+layout: redirect
+blueprints:
+  - redirect
+revisions: false
+sort_dir: desc

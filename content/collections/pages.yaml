@@ -1,3 +1,5 @@
 title: Pages
 structure: pages
 route: '{parent_uri}/{slug}'
+blueprints:
+  - page

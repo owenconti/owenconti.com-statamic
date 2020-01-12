@@ -7,8 +7,11 @@ tree:
     title: Home
     url: /
   -
-    title: About
-    url: /about
+    title: Categories
+    url: /categories
   -
-    title: Contact
-    url: /contact
+    title: Analytics
+    url: /analytics
+  -
+    title: RSS
+    url: /rss

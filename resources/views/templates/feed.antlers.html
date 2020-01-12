@@ -13,7 +13,7 @@
           <link>{{ permalink }}</link>
           <guid>{{ permalink }}</guid>
           <pubDate>{{ date format="r" }}</pubDate>
-          <description>{{ content | full_urls | cdata }}</description>
+          <description>{{ excerpt | full_urls | cdata }}</description>
       </item>
       {{ /collection:posts }}
     </channel>

@@ -15,7 +15,8 @@ p {
 }
 
 code {
-  @apply bg-light text-xs text-secondary p-1;
+  @apply bg-light text-secondary p-1;
+  font-size: 16px;
 }
 
 blockquote {

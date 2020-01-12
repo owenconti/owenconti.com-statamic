@@ -1,0 +1,13 @@
+title: Redirect
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: redirect_url
+        field:
+          character_limit: 0
+          type: text
+          localizable: false
+          display: 'Redirect URL'
+          validate: required
