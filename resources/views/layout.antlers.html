@@ -35,5 +35,9 @@
       window.algoliaApiKey = "{{ env:ALGOLIA_SEARCH }}";
     </script>
     <script async src="{{ mix src='/js/app.js' }}"></script>
+
+    {{ if env:APP_ENV === 'production' }}
+      {{ partial:partials/analytics }}
+    {{ /if }}
   </body>
 </html>
