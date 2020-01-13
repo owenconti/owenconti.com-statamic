@@ -3,7 +3,6 @@ route: 'posts/{slug}'
 template: templates/post
 blueprints:
   - post
-structure: posts
 taxonomies:
   - category
 revisions: false

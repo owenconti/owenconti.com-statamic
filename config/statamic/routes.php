@@ -30,7 +30,7 @@ return [
     */
 
     'routes' => [
-        // '/' => 'home'
+        '/' => 'templates/home'
     ],
 
     /*

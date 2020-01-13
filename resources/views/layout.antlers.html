@@ -16,7 +16,7 @@
     <meta property="og:url" content="{{ current_url }}">
     <meta property="og:image" content="{{ env:APP_URL }}/images/ohseemedia-square.png">
 
-    <title>{{ title }} | Oh See Media</title>
+    <title>{{ title ?? 'Home' }} | Oh See Media</title>
 
     <link rel="stylesheet" href="{{ mix src='/css/app.css' }}">
     <link rel="icon" href="/favicon.png" type="image/png">
