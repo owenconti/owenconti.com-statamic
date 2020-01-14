@@ -6,6 +6,7 @@ module.exports = {
   ...config.theme,
   fontFamily: {
    sans: [
+    'Inter',
     '-apple-system',
     'BlinkMacSystemFont',
     '"Segoe UI"',
