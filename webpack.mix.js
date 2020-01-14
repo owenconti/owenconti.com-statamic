@@ -17,6 +17,7 @@ require('laravel-mix-purgecss');
 mix.copy('resources/images', 'public/images')
   .copy('resources/fonts', 'public/fonts')
   .js('resources/js/app.js', 'public/js')
+  .postCss('resources/css/fonts.css', 'public/css')
   .postCss('resources/css/app.css', 'public/css', [
     require('postcss-import'),
     tailwindcss('./tailwind.config.js'),
