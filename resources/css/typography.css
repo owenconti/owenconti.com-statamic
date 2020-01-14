@@ -37,6 +37,7 @@ ul li {
 
 .heading {
   @apply font-heading font-normal tracking-wider text-2xl;
+  text-shadow: 0 2px 0 #FFF;
 }
 
 h1 {
