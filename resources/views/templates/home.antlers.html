@@ -1,4 +1,4 @@
-{{ collection:posts limit="10" paginate="true" as="posts" }}
+{{ collection:posts limit="10" sort="date:desc" as="posts" }}
     {{ if no_results }}
         <p>Aww, there are no results.</p>
     {{ /if }}
@@ -7,13 +7,8 @@
       {{ partial:partials/summary }}
     {{ /posts }}
 
-    {{ paginate }}
-        <div class="flex justify-between text-sm">
-          <a href="{{ prev_page }}">⬅ Previous</a>
-  
-          {{ current_page }} of {{ total_pages }} pages
-          (There {{ total_items == 1 ? 'is' : 'are' }} {{ total_items }} {{ 'post' | plural:total_items }})
-          <a href="{{ next_page }}">Next ➡</a>
-        </div>
-    {{ /paginate }}
+    <div>
+      <p><strong>Looking for more?</strong></p>
+      <p>You can view the entire post list on the <a href="/categories">Categories</a> page.</p>
+    </div>
 {{ /collection:posts }}
