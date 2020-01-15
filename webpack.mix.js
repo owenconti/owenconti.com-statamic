@@ -29,6 +29,8 @@ mix.copy('resources/images', 'public/images')
 
 if (mix.inProduction()) {
   mix.purgeCss({
+    folders: ['resources', 'content/collections'],
+    extensions: ['html', 'js', 'md', 'php'],
     whitelistPatterns: [/hljs/, /ais-/]
   });
 }

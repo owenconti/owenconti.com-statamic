@@ -41,7 +41,6 @@ sections:
             - image
             - table
             - code
-            - codeblock
             - strikethrough
           container: assets
           save_html: false
@@ -55,3 +54,18 @@ sections:
           type: bard
           localizable: false
           display: Content
+          sets:
+            code:
+              display: Code
+              fields:
+                -
+                  import: code_block
+            example:
+              display: Example
+              fields:
+                -
+                  handle: example_content
+                  field:
+                    type: textarea
+                    localizable: false
+                    display: 'Example Content'

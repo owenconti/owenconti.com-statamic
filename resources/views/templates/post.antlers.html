@@ -2,8 +2,7 @@
 
 <div class="flex text-sm text-gray-700 mb-8 justify-between">
   <p class="mb-0">
-    <time datetime="{{ date | format:Y-m-d }}">{{ date }}</time>
-    - Posted in {{ category }} <a href="/categories#{{ slug }}">{{ title }}</a> {{ /category }}
+    Published <time datetime="{{ date | format:Y-m-d }}">{{ date }}</time> under {{ category }} <a href="/categories#{{ slug }}">{{ title }}</a> {{ /category }}
   </p>
 </div>
 
@@ -14,7 +13,20 @@
 {{ /if }}
 
 <div class="content text-gray-800">
-  {{ content | noparse }}
+  {{ content }}
+    {{ if type == "text" }}
+      {{ text | noparse }}
+    {{ elseif type == "code" }}
+      <pre><code class="{{ syntax }}">{{ code | noparse | entities }}</code></pre>
+    {{ elseif type == "example" }}
+      <div class="p-4 pt-2 mb-4 border border-gray-300 bg-white rounded shadow-inner">
+        <h4 class="text-gray-400 m-0 mb-6">Example</h4>
+        <div>
+          {{ example_content }}
+        </div>
+      </div>
+    {{ /if }}
+  {{ /content }}
 </div>
 
 {{ if video}}

@@ -1,6 +1,10 @@
 /*! purgecss start ignore */
 .content {
   @apply text-lg;
+
+  img {
+    @apply max-w-full;
+  }
 }
 
 a {
@@ -12,6 +16,10 @@ a {
 
 p {
   @apply mb-4 leading-relaxed;
+}
+
+pre {
+  @apply mb-4;
 }
 
 code {
