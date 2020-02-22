@@ -9,6 +9,8 @@
         "fideloper/proxy": "^4.0",
         "laravel/framework": "^6.2",
         "laravel/tinker": "^1.0",
+        "laravel/vapor-cli": "^1.6",
+        "laravel/vapor-core": "^2.5",
         "statamic/cms": "3.0.*@beta",
         "statamic/static-site-generator": "dev-master"
     },
