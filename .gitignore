@@ -8,7 +8,6 @@
 /public/fonts
 /public/mix-manifest.json
 /public/robots.txt
-/config/statamic/protect.php
 /storage/*.key
 /vendor
 /users
