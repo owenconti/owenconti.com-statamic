@@ -69,3 +69,7 @@ sections:
                     type: textarea
                     localizable: false
                     display: 'Example Content'
+                -
+                  handle: show_example
+                  field:
+                    type: toggle

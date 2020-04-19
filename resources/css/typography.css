@@ -44,15 +44,14 @@ ul li {
 }
 
 .heading {
-  @apply font-heading font-normal tracking-wider;
-  text-shadow: 0 2px 0 #FFF;
+  @apply font-heading font-semibold tracking-wider;
 }
 
 h1 {
   @apply heading text-3xl leading-tight mb-2;
 }
 h2 {
-  @apply heading text-2xl text-secondary mt-12 mb-5;
+  @apply heading text-2xl mt-12 mb-5;
 }
 h3 {
   @apply heading text-xl text-secondary mt-10 mb-4;
