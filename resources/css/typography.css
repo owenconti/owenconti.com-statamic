@@ -54,10 +54,10 @@ h2 {
   @apply heading text-2xl mt-12 mb-5;
 }
 h3 {
-  @apply heading text-xl text-secondary mt-10 mb-4;
+  @apply heading text-xl mt-10 mb-4;
 }
 h4 {
-  @apply heading text-lg text-secondary mt-8 mb-3;
+  @apply heading text-lg mt-8 mb-3;
 }
 
 @media (min-width: 768px) {
