@@ -9,6 +9,7 @@
 /public/mix-manifest.json
 /public/robots.txt
 /storage/*.key
+/config/statamic/protect.php
 /vendor
 /users
 /.idea
