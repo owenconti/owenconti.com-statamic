@@ -21,7 +21,6 @@ module.exports = {
     '"Noto Color Emoji"'
    ],
    heading: [
-    'Bangers',
     'Inter',
     '-apple-system',
     'BlinkMacSystemFont',
