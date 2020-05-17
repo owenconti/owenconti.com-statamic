@@ -73,3 +73,12 @@ sections:
                   handle: show_example
                   field:
                     type: toggle
+            gist:
+              display: Gist
+              fields:
+                -
+                  handle: gist_url
+                  field:
+                    type: text
+                    localizable: false
+                    display: 'Gist URL'
