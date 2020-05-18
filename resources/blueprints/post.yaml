@@ -28,6 +28,7 @@ sections:
       -
         handle: content
         field:
+          type: bard
           buttons:
             - h2
             - h3
@@ -51,10 +52,14 @@ sections:
           reading_time: true
           fullscreen: true
           allow_source: true
-          type: bard
           localizable: false
           display: Content
           sets:
+            gist_content:
+              display: Gist
+              fields:
+                - 
+                  import: gist_block
             code:
               display: Code
               fields:

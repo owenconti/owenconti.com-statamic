@@ -11,6 +11,7 @@
         "laravel/tinker": "^1.0",
         "laravel/vapor-cli": "^1.6",
         "laravel/vapor-core": "^2.5",
+        "ohseesoftware/oh-see-gists": "^1.0",
         "statamic/cms": "3.0.*@beta",
         "statamic/static-site-generator": "dev-master"
     },

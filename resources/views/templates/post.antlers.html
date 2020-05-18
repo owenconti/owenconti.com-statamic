@@ -18,8 +18,8 @@
       {{ text | noparse }}
     {{ elseif type == "code" }}
       <pre><code class="{{ syntax }}">{{ code | noparse | entities }}</code></pre>
-    {{ elseif type == "gist" }}
-      <script src="{{ gist_url }}"></script>
+    {{ elseif type == "gist_content" }}
+      {{ partial src="partials/gist_content" }}
     {{ elseif type == "example" }}
       <div class="p-4 pt-3 mb-4 border border-gray-300 bg-white rounded shadow-inner">
         <h4 class="text-gray-400 m-0 mb-4">Example</h4>
