@@ -1,7 +1,6 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 
-@import 'highlight.js/styles/github.css';
 @import './typography.css';
 @import './search.css';
 

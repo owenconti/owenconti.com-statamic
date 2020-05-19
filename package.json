@@ -18,7 +18,6 @@
         "@tailwindcss/custom-forms": "^0.2.1",
         "alpinejs": "^1.7.0",
         "color": "^3.1.2",
-        "highlight.js": "^9.17.1",
         "laravel-mix-purgecss": "^4.2.0",
         "postcss-import": "^12.0.1",
         "postcss-nested": "^4.2.1",
