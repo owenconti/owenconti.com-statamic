@@ -30,6 +30,11 @@ pre code {
   @apply text-sm p-4;
 }
 
+.gist .blob-code.blob-code-inner {
+  font-size: 14px;
+  line-height: 24px;
+}
+
 blockquote {
   @apply p-4 my-6 mx-0 text-gray-800 bg-gray-200 border-l-4 border-secondary-lighten;
 
