@@ -60,11 +60,6 @@ sections:
               fields:
                 - 
                   import: gist_block
-            code:
-              display: Code
-              fields:
-                -
-                  import: code_block
             example:
               display: Example
               fields:
@@ -74,16 +69,3 @@ sections:
                     type: textarea
                     localizable: false
                     display: 'Example Content'
-                -
-                  handle: show_example
-                  field:
-                    type: toggle
-            gist:
-              display: Gist
-              fields:
-                -
-                  handle: gist_url
-                  field:
-                    type: text
-                    localizable: false
-                    display: 'Gist URL'

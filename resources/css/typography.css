@@ -23,12 +23,11 @@ pre {
 }
 
 code {
-  @apply bg-light text-secondary p-1;
-  font-size: 16px;
+  @apply bg-light text-secondary text-sm p-1;
 }
 
-.hljs {
-  @apply rounded-lg shadow-lg max-w-full p-4;
+pre code {
+  @apply text-sm p-4;
 }
 
 blockquote {
@@ -41,6 +40,9 @@ blockquote {
 
 ul li {
   @apply list-disc ml-8;
+}
+ol li {
+  @apply list-decimal ml-8;
 }
 
 .heading {

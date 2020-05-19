@@ -4,7 +4,7 @@ sections:
     display: Main
     fields:
       -
-        handle: redirect_url
+        handle: redirect_location
         field:
           character_limit: 0
           type: text

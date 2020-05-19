@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0e4d97d1228ad7100557ad19c59ee8db",
+    "content-hash": "f1eb28aed4ecfc4dae2403c3e464311b",
     "packages": [
         {
             "name": "algolia/algoliasearch-client-php",
@@ -3125,17 +3125,11 @@
         },
         {
             "name": "ohseesoftware/oh-see-gists",
-            "version": "v1.0.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/ohseesoftware/oh-see-gists.git",
-                "reference": "0e011e7bbf11d8f261e14405de5e80c76892d759"
-            },
+            "version": "dev-master",
             "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/ohseesoftware/oh-see-gists/zipball/0e011e7bbf11d8f261e14405de5e80c76892d759",
-                "reference": "0e011e7bbf11d8f261e14405de5e80c76892d759",
-                "shasum": ""
+                "type": "path",
+                "url": "../oh-see-gists",
+                "reference": "ea0f05bdd92400e0b5d4fcfedd98d860b778037f"
             },
             "require": {
                 "graham-campbell/github": "^9.2@dev",
@@ -3163,12 +3157,18 @@
                     "OhSeeSoftware\\OhSeeGists\\": "src"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "autoload-dev": {
+                "psr-4": []
+            },
+            "scripts": {
+                "lint": [
+                    "php-cs-fixer fix ./src"
+                ]
+            },
             "license": [
                 "MIT"
             ],
-            "description": "A Statamic v3 add-on to use GitHub's Gists to host code blocks.",
-            "time": "2020-05-18T04:35:00+00:00"
+            "description": "A Statamic v3 add-on to use GitHub's Gists to host code blocks."
         },
         {
             "name": "opis/closure",
@@ -9254,6 +9254,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "ohseesoftware/oh-see-gists": 20,
         "statamic/cms": 10,
         "statamic/static-site-generator": 20
     },
