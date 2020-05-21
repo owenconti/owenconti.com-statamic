@@ -30,8 +30,8 @@
     </div>
 
     <script>
-      window.algoliaAppId = "{{ env:ALGOLIA_APP_ID }}";
-      window.algoliaApiKey = "{{ env:ALGOLIA_SEARCH }}";
+      window.algoliaAppId = "{{ config:algolia:app_id }}";
+      window.algoliaApiKey = "{{ config:algolia:app_key }}";
     </script>
     <script async src="{{ mix src='/js/app.js' }}"></script>
 
