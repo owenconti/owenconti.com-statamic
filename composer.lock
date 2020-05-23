@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0e4d97d1228ad7100557ad19c59ee8db",
+    "content-hash": "fc09c7a458a2d2cf2d8f11bc8936c18a",
     "packages": [
         {
             "name": "algolia/algoliasearch-client-php",
@@ -2633,6 +2633,43 @@
             "description": "lesserphp is a compiler for LESS written in PHP based on leafo's lessphp.",
             "homepage": "http://leafo.net/lessphp/",
             "time": "2020-01-19T19:18:49+00:00"
+        },
+        {
+            "name": "mattrothenberg/webmentions",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mattrothenberg/webmentions.git",
+                "reference": "e371a931f9f86790941b9a150ddc6c8ab4f6eb4c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mattrothenberg/webmentions/zipball/e371a931f9f86790941b9a150ddc6c8ab4f6eb4c",
+                "reference": "e371a931f9f86790941b9a150ddc6c8ab4f6eb4c",
+                "shasum": ""
+            },
+            "require": {
+                "guzzlehttp/guzzle": "~6.0"
+            },
+            "type": "statamic-addon",
+            "extra": {
+                "statamic": {
+                    "name": "Webmentions",
+                    "description": "Webmentions addon"
+                },
+                "laravel": {
+                    "providers": [
+                        "Mattrothenberg\\Webmentions\\ServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Mattrothenberg\\Webmentions\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "time": "2019-12-05T18:28:52+00:00"
         },
         {
             "name": "monolog/monolog",
@@ -9254,6 +9291,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "mattrothenberg/webmentions": 20,
         "statamic/cms": 10,
         "statamic/static-site-generator": 20
     },
