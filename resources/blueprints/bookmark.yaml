@@ -13,6 +13,13 @@ sections:
           display: Title
           validate: required
       -
+        handle: description
+        field:
+          type: textarea
+          localizable: false
+          listable: hidden
+          display: Description
+      -
         handle: bookmark_url
         field:
           input_type: text
