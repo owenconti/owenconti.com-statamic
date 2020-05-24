@@ -10,5 +10,8 @@ tree:
     title: Categories
     url: /categories
   -
+    title: Bookmarks
+    url: /bookmarks
+  -
     title: Analytics
     url: /analytics

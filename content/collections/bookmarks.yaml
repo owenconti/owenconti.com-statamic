@@ -1,9 +1,10 @@
 title: Bookmarks
-template: default
+template: bookmarks/show
 layout: layout
 blueprints:
   - bookmark
 revisions: false
+route: '/bookmarks/{slug}'
 sort_dir: asc
 date_behavior:
   past: public
