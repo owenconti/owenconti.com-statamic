@@ -1,0 +1,23 @@
+title: Bookmark
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: title
+        field:
+          input_type: text
+          type: text
+          localizable: false
+          listable: hidden
+          display: Title
+          validate: required
+      -
+        handle: bookmark_url
+        field:
+          input_type: text
+          type: text
+          localizable: false
+          listable: hidden
+          display: URL
+          validate: required|url
