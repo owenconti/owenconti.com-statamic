@@ -1,5 +1,10 @@
 title: Bookmarks
+template: default
+layout: layout
+blueprints:
+  - bookmark
 revisions: false
+sort_dir: asc
 date_behavior:
   past: public
   future: private
