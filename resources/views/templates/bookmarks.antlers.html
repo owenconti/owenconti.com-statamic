@@ -1,9 +1,13 @@
-{{ collection:bookmarks limit="500" sort="date:desc" as="bookmarks" }}
-    {{ if no_results }}
-        <p>Aww, there are no results.</p>
-    {{ /if }}
+<h1>Bookmarks</h1>
 
-    {{ bookmarks }}
-      {{ partial:partials/bookmark }}
-    {{ /bookmarks }}
-{{ /collection:bookmarks }}
+<div class="mt-8">
+  {{ collection:bookmarks limit="500" sort="date:desc" as="bookmarks" }}
+      {{ if no_results }}
+          <p>Aww, there are no results.</p>
+      {{ /if }}
+  
+      {{ bookmarks }}
+        {{ partial:partials/bookmark }}
+      {{ /bookmarks }}
+  {{ /collection:bookmarks }}
+</div>
