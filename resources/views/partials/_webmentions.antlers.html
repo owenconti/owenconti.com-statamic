@@ -1,0 +1,14 @@
+{{ webmentions:count url="{ current_url }/" }}
+  <section class="border border-grey-200 bg-gray-100 rounded mt-8 p-6">
+    <h3 class="m-0">Webmentions</h3>
+    
+    <div class="text-lg mt-4 md:flex md:justify-between">
+      <div class="mb-2 md:mb-0">❤️ Likes: <strong>{{ type:like or '0' }}</strong></div>
+      <div class="mb-2 md:mb-0">📣 Retweets: <strong>{{ type:repost or '0' }}</strong></div>
+      <div class="mb-2 md:mb-0">💬 Replies: <strong>{{ type:reply or '0' }}</strong></div>
+      <div>🙊 Mentions: <strong>{{ type:mention or '0' }}</strong></div>
+    </div>
+
+    <div class="mt-4">Enjoyed this post? Have a comment or feedback? <a href="https://twitter.com/intent/tweet/?text=@owenconti%20{{ current_url }}">Let me know on Twitter!</a></div>
+  </section>
+{{ /webmentions:count }}
