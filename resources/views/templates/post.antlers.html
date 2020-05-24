@@ -1,14 +1,9 @@
 <h1 class="heading">{{ title }}</h1>
 
 <div class="text-sm text-gray-700 mb-8">
-  {{ webmentions url="{ current_url }/" }}
-    <p class="mb-0">
-      Published <time datetime="{{ date | format:Y-m-d }}">{{ date }}</time> under {{ category }}<a href="/categories#{{ slug }}">{{ title }}</a>{{ /category }}.
-      {{ if mentions | length > 1 }}
-        This post has been mentioned {{mentions | length}} times!
-      {{ /if }}
-    </p>
-  {{ /webmentions }}
+  <p class="mb-0">
+    Published <time datetime="{{ date | format:Y-m-d }}">{{ date }}</time> under {{ category }}<a href="/categories#{{ slug }}">{{ title }}</a>{{ /category }}.
+  </p>
 </div>
 
 {{ if video}}
@@ -41,3 +36,20 @@
     <iframe src="{{ video | embed_url }}" class="absolute top-0 right-0 bottom-0 left-0 w-full h-full"></iframe>
   </div>
 {{ /if }}
+
+<hr class="border-t-8 border-grey-400 my-8">
+
+{{ webmentions:count url="{ current_url }/" }}
+  <section class="border border-grey-200 bg-gray-100 rounded mt-8 p-6">
+    <h3 class="m-0">Webmentions</h3>
+    
+    <div class="text-lg mt-4 flex justify-between">
+      <div>❤️ Likes: <strong>{{ type:like or '0' }}</strong></div>
+      <div>📣 Retweets: <strong>{{ type:repost or '0' }}</strong></div>
+      <div>💬 Replies: <strong>{{ type:reply or '0' }}</strong></div>
+      <div>🙊 Mentions: <strong>{{ type:mention or '0' }}</strong></div>
+    </div>
+
+    <div class="mt-4">Enjoyed this post? Have a comment or feedback? <a href="https://twitter.com/intent/tweet/?text=@owenconti%20{{ current_url }}">Let me know on Twitter!</a></div>
+  </section>
+{{ /webmentions:count }}

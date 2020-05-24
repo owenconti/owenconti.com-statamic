@@ -8,7 +8,7 @@
 }
 
 a {
-  @apply text-primary font-semibold;
+  @apply text-secondary font-semibold;
   &:hover {
     @apply underline;
   }
@@ -55,16 +55,16 @@ ol li {
 }
 
 h1 {
-  @apply heading text-3xl leading-tight mb-2;
+  @apply heading text-primary text-3xl leading-tight mb-2;
 }
 h2 {
-  @apply heading text-2xl mt-12 mb-5;
+  @apply heading text-primary text-2xl mt-12 mb-5;
 }
 h3 {
-  @apply heading text-xl mt-10 mb-4;
+  @apply heading text-primary text-xl mt-10 mb-4;
 }
 h4 {
-  @apply heading text-lg mt-8 mb-3;
+  @apply heading text-primary text-lg mt-8 mb-3;
 }
 
 @media (min-width: 768px) {
