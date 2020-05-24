@@ -1,7 +1,7 @@
 <h1>Bookmarks</h1>
 
 <div class="mt-8">
-  {{ collection:bookmarks limit="500" sort="date:desc" as="bookmarks" }}
+  {{ collection:bookmarks limit="500" sort="title:asc" as="bookmarks" }}
       {{ if no_results }}
           <p>Aww, there are no results.</p>
       {{ /if }}
