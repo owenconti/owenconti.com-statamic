@@ -1,9 +1,9 @@
-<div class="relative w-64" x-data="initSearch()">
+<div class="relative w-full" x-data="initSearch()">
   <input
     type="search"
     x-model="query"
     x-on:keyup="search()"
-    class="bg-white border border-gray-300 py-1 px-2 rounded w-full"
+    class="bg-white border border-gray-400 shadow-sm py-1 px-2 rounded w-full"
     placeholder="Search..."
   />
   <div x-show="query" class="absolute bg-white shadow rounded w-full max-w-full" style="display: none;">
