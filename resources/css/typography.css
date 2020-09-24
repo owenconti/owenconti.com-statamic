@@ -3,7 +3,7 @@
   @apply text-lg;
 
   img {
-    @apply max-w-full;
+    @apply max-w-full shadow-lg;
   }
 }
 
@@ -27,7 +27,7 @@ code {
 }
 
 pre code {
-  @apply text-sm p-4;
+  @apply block text-sm p-4;
 }
 
 .gist .blob-code.blob-code-inner {
@@ -58,13 +58,13 @@ h1 {
   @apply heading text-primary text-3xl leading-tight mb-2;
 }
 h2 {
-  @apply heading text-primary text-2xl mt-12 mb-5;
+  @apply heading text-primary text-2xl mb-5;
 }
 h3 {
-  @apply heading text-primary text-xl mt-10 mb-4;
+  @apply heading text-primary text-xl mb-4;
 }
 h4 {
-  @apply heading text-primary text-lg mt-8 mb-3;
+  @apply heading text-primary text-lg mb-3;
 }
 
 @media (min-width: 768px) {

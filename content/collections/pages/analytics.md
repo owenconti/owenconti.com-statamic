@@ -7,14 +7,6 @@ updated_at: 1578798407
 id: 38749164-c700-4a20-8081-35d5f6d199cf
 content:
   -
-    type: heading
-    attrs:
-      level: 2
-    content:
-      -
-        type: text
-        text: Analytics
-  -
     type: paragraph
     content:
       -
