@@ -8,7 +8,7 @@ tree:
     url: /
   -
     title: Categories
-    url: /categories
+    url: /category
   -
     title: Bookmarks
     url: /bookmarks

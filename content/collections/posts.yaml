@@ -1,14 +1,12 @@
 title: Posts
-route: 'posts/{slug}'
 template: templates/post
-blueprints:
-  - post
+layout: layout
 taxonomies:
   - category
 revisions: false
-entry_order:
-  - 00cd941e-b9d6-407a-b1a2-451391033e91
+route: 'posts/{slug}'
 date: true
+sort_dir: desc
 date_behavior:
   past: public
   future: private

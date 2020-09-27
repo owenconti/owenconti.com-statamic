@@ -12,27 +12,28 @@
     </a>
   </div>
 
-  {{ category }}
-    {{ if entries_count > 1 }}
-      <div class="p-4 mt-6 bg-gray-100 rounded shadow">
-        {{ entries limit="3" sort="date:desc" }}
-          {{ if page:id !== id }}
-            {{ partial:partials/summary }}
-            <!-- <a href="{{ url }}" class="block mb-2">{{ title }}</a> -->
-          {{ /if }}
-        {{ /entries }}
+  {{ if current_uri | starts_with:/post }}
+    {{ category }}
+      {{ if entries_count > 1 }}
+        <div class="p-4 mt-6 bg-gray-100 rounded shadow">
+          {{ entries limit="3" sort="date:desc" status:is="published" }}
+            {{ if page:id !== id }}
+              {{ partial:partials/summary }}
+            {{ /if }}
+          {{ /entries }}
 
-        <a href="/categories#{{ slug }}">View all {{ title }} posts</a>
-      </div>
-    {{ /if }}
-  {{ /category }}
+          <a href="/category/{{ slug }}">View all {{ title }} posts</a>
+        </div>
+      {{ /if }}
+    {{ /category }}
+  {{ /if }}
 
   <div class="p-4 mt-6 bg-gray-100 rounded shadow">
     <h3>Categories</h3>
 
     {{ taxonomy:category }}
       {{ if !entries | is_empty }}
-        <a href="/categories#{{ slug }}" class="mt-2 block">{{ title }}</a>
+        <a href="{{ url }}" class="mt-2 block">{{ title }} <span class="font-normal text-sm">({{ entries_count }})</span></a>
       {{ /if }}
     {{ /taxonomy:category }}
   </div>

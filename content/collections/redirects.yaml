@@ -2,6 +2,6 @@ title: Redirects
 route: '{slug}'
 layout: redirect
 blueprints:
-  - redirect
+  - blueprints/redirects/redirect
 revisions: false
 sort_dir: desc
