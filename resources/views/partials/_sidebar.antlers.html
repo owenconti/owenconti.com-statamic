@@ -12,6 +12,21 @@
     </a>
   </div>
 
+  {{ category }}
+    {{ if entries_count > 1 }}
+      <div class="p-4 mt-6 bg-gray-100 rounded shadow">
+        {{ entries limit="3" sort="date:desc" }}
+          {{ if page:id !== id }}
+            {{ partial:partials/summary }}
+            <!-- <a href="{{ url }}" class="block mb-2">{{ title }}</a> -->
+          {{ /if }}
+        {{ /entries }}
+
+        <a href="/categories#{{ slug }}">View all {{ title }} posts</a>
+      </div>
+    {{ /if }}
+  {{ /category }}
+
   <div class="p-4 mt-6 bg-gray-100 rounded shadow">
     <h3>Categories</h3>
 

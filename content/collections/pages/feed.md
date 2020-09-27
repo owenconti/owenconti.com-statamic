@@ -1,7 +1,7 @@
 ---
 title: Feed
 author: 197c1509-8dff-4d72-9898-334084519619
-template: templates/feed
+template: feed
 layout: feed
 updated_by: 197c1509-8dff-4d72-9898-334084519619
 updated_at: 1578280472

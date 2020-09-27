@@ -1,4 +1,5 @@
 title: Pages
 route: '{parent_uri}/{slug}'
+template: templates/page
 blueprints:
   - page
