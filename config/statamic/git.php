@@ -77,8 +77,8 @@ return [
     */
 
     'paths' => [
-        base_path('content'),
-        base_path('users'),
+        env('STATAMIC_CONTENT_BASE', base_path('content')),
+        env('STATAMIC_USERS_BASE', base_path('users')),
         resource_path('blueprints'),
         resource_path('fieldsets'),
         resource_path('forms'),
