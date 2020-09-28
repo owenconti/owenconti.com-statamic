@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "12e6567330cf4ba85fed0f3446b5e31a",
+    "content-hash": "0273ad8d4d551edaa34ff33ef9ed281c",
     "packages": [
         {
             "name": "algolia/algoliasearch-client-php",
@@ -2024,36 +2024,36 @@
         },
         {
             "name": "laravel/vapor-core",
-            "version": "v2.7.1",
+            "version": "v2.9.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/vapor-core.git",
-                "reference": "de002b038cb53477cbadda1ba2e80a253a962331"
+                "reference": "f982e953bcd6dcb9d762be826faf3d15bd53bc18"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/vapor-core/zipball/de002b038cb53477cbadda1ba2e80a253a962331",
-                "reference": "de002b038cb53477cbadda1ba2e80a253a962331",
+                "url": "https://api.github.com/repos/laravel/vapor-core/zipball/f982e953bcd6dcb9d762be826faf3d15bd53bc18",
+                "reference": "f982e953bcd6dcb9d762be826faf3d15bd53bc18",
                 "shasum": ""
             },
             "require": {
                 "aws/aws-sdk-php": "^3.80",
-                "guzzlehttp/guzzle": "^6.3",
-                "hollodotme/fast-cgi-client": "3.0.1",
-                "illuminate/container": "^6.0|^7.0",
-                "illuminate/http": "^6.0|^7.0",
-                "illuminate/queue": "^6.0|^7.0",
-                "illuminate/support": "^6.0|^7.0",
+                "guzzlehttp/guzzle": "^6.3|^7.0",
+                "hollodotme/fast-cgi-client": "^3.0",
+                "illuminate/container": "^6.0|^7.0|^8.0",
+                "illuminate/http": "^6.0|^7.0|^8.0",
+                "illuminate/queue": "^6.0|^7.0|^8.0",
+                "illuminate/support": "^6.0|^7.0|^8.0",
                 "monolog/monolog": "^1.12|^2.0",
                 "nyholm/psr7": "^1.0",
-                "php": "^7.1",
+                "php": "^7.2",
                 "riverline/multipart-parser": "^2.0",
                 "symfony/process": "^4.3|^5.0",
                 "symfony/psr-http-message-bridge": "^1.0|^2.0"
             },
             "require-dev": {
                 "mockery/mockery": "^1.2",
-                "orchestra/testbench": "^4.0",
+                "orchestra/testbench": "^4.0|^5.0|^6.0",
                 "phpunit/phpunit": "^8.0"
             },
             "type": "library",
@@ -2088,7 +2088,7 @@
                 "laravel",
                 "vapor"
             ],
-            "time": "2020-05-15T14:08:14+00:00"
+            "time": "2020-09-23T12:49:33+00:00"
         },
         {
             "name": "league/commonmark",
@@ -4672,48 +4672,6 @@
             "notification-url": "https://packagist.org/downloads/",
             "description": "Static site generator for Statamic 3.",
             "time": "2020-08-21T21:18:00+00:00"
-        },
-        {
-            "name": "statamic/static-site-generator",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/statamic/ssg.git",
-                "reference": "e37e77e6bb205e4ee0a33bca00f6e9d33a902177"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/statamic/ssg/zipball/e37e77e6bb205e4ee0a33bca00f6e9d33a902177",
-                "reference": "e37e77e6bb205e4ee0a33bca00f6e9d33a902177",
-                "shasum": ""
-            },
-            "require": {
-                "statamic/cms": "3.0.*@beta"
-            },
-            "require-dev": {
-                "orchestra/testbench": "^4.0"
-            },
-            "type": "statamic-addon",
-            "extra": {
-                "statamic": {
-                    "name": "Static Site Generator",
-                    "description": "Static Site Generator addon"
-                },
-                "laravel": {
-                    "providers": [
-                        "Statamic\\StaticSite\\ServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Statamic\\StaticSite\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "description": "Static site generator for Statamic 3.",
-            "abandoned": "statamic/ssg",
-            "time": "2020-04-10T14:03:02+00:00"
         },
         {
             "name": "statamic/stringy",
@@ -9197,6 +9155,48 @@
             "time": "2016-10-03T07:35:21+00:00"
         },
         {
+            "name": "statamic/static-site-generator",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/statamic/ssg.git",
+                "reference": "e37e77e6bb205e4ee0a33bca00f6e9d33a902177"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/statamic/ssg/zipball/e37e77e6bb205e4ee0a33bca00f6e9d33a902177",
+                "reference": "e37e77e6bb205e4ee0a33bca00f6e9d33a902177",
+                "shasum": ""
+            },
+            "require": {
+                "statamic/cms": "3.0.*@beta"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^4.0"
+            },
+            "type": "statamic-addon",
+            "extra": {
+                "statamic": {
+                    "name": "Static Site Generator",
+                    "description": "Static Site Generator addon"
+                },
+                "laravel": {
+                    "providers": [
+                        "Statamic\\StaticSite\\ServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Statamic\\StaticSite\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "description": "Static site generator for Statamic 3.",
+            "abandoned": "statamic/ssg",
+            "time": "2020-04-10T14:03:02+00:00"
+        },
+        {
             "name": "theseer/tokenizer",
             "version": "1.1.3",
             "source": {
@@ -9288,8 +9288,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "mattrothenberg/webmentions": 20,
-        "statamic/static-site-generator": 20
+        "mattrothenberg/webmentions": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,

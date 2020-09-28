@@ -1,20 +1,22 @@
-id: 7355
-name: oh-see-media
+id: 13910
+name: ohseemediacom
 environments:
- production:
-  memory: 1024
-  cli-memory: 512
-  runtime: php-7.3
-  build:
-   - 'composer install --no-dev'
-   - 'php artisan event:cache'
-   - 'rm -rf public/vendor && npm ci && npm run prod && rm -rf node_modules'
- staging:
-  memory: 1024
-  cli-memory: 512
-  runtime: php-7.3
-  scheduler: false
-  build:
-   - 'composer install'
-   - 'php artisan event:cache'
-   - 'rm -rf public/vendor && npm ci && npm run dev && rm -rf node_modules'
+    production:
+        network: vapor-statamic-network
+        cache: vapor-statamic-cache
+        domain: next.ohseemedia.com
+        storage: uploads.ohseemedia.com
+        concurrency: 10
+        warm: 2
+        timeout: 30
+        queues: false
+        memory: 1024
+        cli-memory: 512
+        runtime: php-7.4
+        build:
+            - 'COMPOSER_MIRROR_PATH_REPOS=1 composer install --no-dev'
+            - 'php artisan event:cache'
+            - 'php artisan cache:clear'
+            - 'npm ci && npm run prod && rm -rf node_modules'
+            - 'cp -R public resources'
+            - 'rm -rf public/vendor/statamic/cp/svg'

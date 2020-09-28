@@ -30,42 +30,42 @@ return [
 
         'taxonomies' => [
             'class' => Stores\TaxonomiesStore::class,
-            'directory' => base_path('content/taxonomies'),
+            'directory' => env('STATAMIC_CONTENT_BASE', base_path('content')) . '/taxonomies'
         ],
 
         'terms' => [
             'class' => Stores\TermsStore::class,
-            'directory' => base_path('content/taxonomies'),
+            'directory' => env('STATAMIC_CONTENT_BASE', base_path('content')) . '/taxonomies'
         ],
 
         'collections' => [
             'class' => Stores\CollectionsStore::class,
-            'directory' => base_path('content/collections'),
+            'directory' => env('STATAMIC_CONTENT_BASE', base_path('content')) . '/collections'
         ],
 
         'entries' => [
             'class' => Stores\EntriesStore::class,
-            'directory' => base_path('content/collections'),
+            'directory' => env('STATAMIC_CONTENT_BASE', base_path('content')) . '/collections'
         ],
 
-        'structures' => [
-            'class' => Stores\StructuresStore::class,
-            'directory' => base_path('content/structures'),
+        'navigation' => [
+            'class' => Stores\NavigationStore::class,
+            'directory' => env('STATAMIC_CONTENT_BASE', base_path('content')) . '/navigation'
         ],
 
         'globals' => [
             'class' => Stores\GlobalsStore::class,
-            'directory' => base_path('content/globals'),
+            'directory' => env('STATAMIC_CONTENT_BASE', base_path('content')) . '/globals'
         ],
 
         'asset-containers' => [
             'class' => Stores\AssetContainersStore::class,
-            'directory' => base_path('content/assets'),
+            'directory' => env('STATAMIC_CONTENT_BASE', base_path('content')) . '/assets'
         ],
 
         'users' => [
             'class' => Stores\UsersStore::class,
-            'directory' => base_path('users'),
+            'directory' => env('STATAMIC_USERS_BASE', base_path('users'))
         ],
 
     ],

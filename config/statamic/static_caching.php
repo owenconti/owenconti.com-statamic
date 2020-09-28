@@ -35,7 +35,7 @@ return [
 
         'full' => [
             'driver' => 'file',
-            'path' => public_path('static'),
+            'path' => env('STATAMIC_STATIC_BASE', public_path('static')),
             'lock_hold_length' => 0
         ],
 
