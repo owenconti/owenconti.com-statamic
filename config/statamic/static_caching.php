@@ -70,13 +70,8 @@ return [
     */
 
     'invalidation' => [
-
         'class' => null,
-
-        'rules' => [
-            //
-        ]
-
+        'rules' => 'all'
     ],
 
 ];
