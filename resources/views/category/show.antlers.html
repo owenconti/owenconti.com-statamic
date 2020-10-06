@@ -1,7 +1,7 @@
 <h3 class="mb-4 mt-0 font-normal text-gray-600 lowercase" id="{{ slug }}">{{ title }}</h3>
 
 <div>
-  {{ entries }}
+  {{ entries sort="date:desc" }}
     {{ if no_results}}
       <p>There are no posts in this category yet!</p>
     {{ elseif published }}
