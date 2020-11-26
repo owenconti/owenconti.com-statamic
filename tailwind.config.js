@@ -4,6 +4,11 @@ module.exports = {
  ...config,
  theme: {
   ...config.theme,
+  colors: {
+    ...config.theme.colors,
+    primary: '#273240',
+    secondary: 'var(--osm-secondary)',
+  },
   fontFamily: {
    sans: [
     'Inter',
