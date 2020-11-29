@@ -2,6 +2,10 @@ const config = require('@ohseesoftware/tailwind-config');
 
 module.exports = {
  ...config,
+ purge: {
+   enabled: true,
+   content: ['resources/**/*', 'content/collections/**/*']
+ },
  variants: {
   extend: {
     borderWidth: ['last'],
