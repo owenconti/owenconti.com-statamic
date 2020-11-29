@@ -1,56 +1,13 @@
-<div class="relative w-full" x-data="initSearch()">
+<form method="GET" action="/search" class="flex items-center">
   <input
     type="search"
-    x-model="query"
-    x-on:keyup="search()"
-    class="bg-white border border-gray-400 shadow-sm py-1 px-2 rounded w-full"
+    name="q"
+    class="bg-white border border-gray-400 focus:border-gray-600 py-2 px-3 rounded w-full"
     placeholder="Search..."
   />
-  <div x-show="query" class="absolute bg-white shadow rounded w-full max-w-full" style="display: none;">
-    <p x-show="loading" class="p-2 m-0">Loading</p>
-    <p x-show="!loading && !resultsHtml" class="p-2 m-0">No results.</p>
-    <div x-show="!loading && resultsHtml" x-html="resultsHtml"></div>
-  </div>
-</div>
-
-<script>
-  function initSearch() {
-    return {
-      query: '',
-      loading: true,
-      resultsHtml: null,
-      search: debounce(function() {
-        if (!this.query) {
-          return;
-        }
-
-        this.loading = true;
-
-        const host = `https://${window.algoliaAppId}-dsn.algolia.net`;
-        const url = `${host}/1/indexes/default?query=${encodeURIComponent(this.query)}`;
-
-        fetch(url, {
-          headers: {
-            'X-Algolia-Application-Id': window.algoliaAppId,
-            'X-Algolia-API-Key': window.algoliaApiKey,
-          }
-        })
-          .then((response) => response.json())
-          .then((data) => {
-            this.resultsHtml = null;
-
-            if (data.hits.length) {
-              this.resultsHtml = data.hits.map(({ url, title }) => {
-                return `<a
-                  href="${url}"
-                  class="block px-2 py-3 bg-white text-sm text-left border-b border-gray-300 hover:bg-gray-200 hover:no-underline"
-                >${title}</a>`;
-              }).join('');
-            }
-
-            this.loading = false;
-          });
-      }, 250)
-    };
-  }
-</script>
+  <button type="submit" class="text-gray-600 hover:text-gray-800 h-5 w-5 -ml-8">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+    </svg>
+  </button>
+</form>

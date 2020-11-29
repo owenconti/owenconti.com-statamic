@@ -2,12 +2,16 @@ const config = require('@ohseesoftware/tailwind-config');
 
 module.exports = {
  ...config,
+ variants: {
+  extend: {
+    borderWidth: ['last'],
+  }
+},
  theme: {
   ...config.theme,
   colors: {
     ...config.theme.colors,
-    primary: '#273240',
-    secondary: 'var(--osm-secondary)',
+    accent: 'var(--osm-accent)',
   },
   fontFamily: {
    sans: [
@@ -26,6 +30,7 @@ module.exports = {
     '"Noto Color Emoji"'
    ],
    heading: [
+    'Bangers',
     'Inter',
     '-apple-system',
     'BlinkMacSystemFont',
@@ -38,5 +43,4 @@ module.exports = {
    ]
   }
  },
- plugins: [require('@tailwindcss/custom-forms')]
 };

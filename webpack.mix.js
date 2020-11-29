@@ -1,7 +1,7 @@
 const mix = require('laravel-mix');
 const tailwindcss = require('tailwindcss');
 
-require('laravel-mix-purgecss');
+require('laravel-mix-svelte');
 
 /*
  |--------------------------------------------------------------------------
@@ -27,10 +27,10 @@ mix.copy('resources/images', 'public/images')
   })
   .version();
 
-if (mix.inProduction()) {
-  mix.purgeCss({
-    folders: ['resources', 'content/collections'],
-    extensions: ['html', 'js', 'md', 'php'],
-    whitelistPatterns: [/hljs/, /ais-/]
-  });
-}
+mix.svelte();
+
+// mix.purgeCss({
+//   folders: ['resources', 'content/collections'],
+//   extensions: ['html', 'js', 'md', 'php'],
+//   whitelistPatterns: [/hljs/, /ais-/]
+// });

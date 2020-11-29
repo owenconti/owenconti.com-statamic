@@ -8,7 +8,7 @@
 }
 
 a {
-  @apply text-secondary font-semibold;
+  @apply text-accent font-semibold;
   &:hover {
     @apply underline;
   }
@@ -51,20 +51,20 @@ ol li {
 }
 
 .heading {
-  @apply font-heading font-semibold tracking-wider;
+  @apply font-heading tracking-widest font-normal;
 }
 
 h1 {
-  @apply heading text-primary text-3xl leading-tight mb-2;
+  @apply heading text-dark text-3xl leading-tight mb-2;
 }
 h2 {
-  @apply heading text-primary text-2xl mb-5;
+  @apply heading text-dark text-2xl mb-4 mt-6;
 }
 h3 {
-  @apply heading text-primary text-xl mb-4;
+  @apply heading text-dark text-xl mb-4;
 }
 h4 {
-  @apply heading text-primary text-lg mb-3;
+  @apply heading text-dark text-lg mb-3;
 }
 
 @media (min-width: 768px) {
