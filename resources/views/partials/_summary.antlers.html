@@ -1,12 +1,8 @@
-<article class="mb-6 pb-6 border-b border-gray-300 last:border-0">
-  <h2 class="m-0">
-    <a href="{{ url }}" class="heading text-dark">{{ title }}</a>
-  </h2>
-  <div class="text-sm text-gray-700">
-    <p class="mb-2">
-      <time datetime="{{ date | format:Y-m-d }}">{{ date }}</time>
-      - Posted in {{ category }}<a href="/category/{{ slug }}">{{ title }}</a>{{ /category }}
-    </p>
-  </div>
-  <div>{{ excerpt }}</div>
+<article class="mb-6 pb-4 border-b border-gray-200 last:border-0">
+  <a href="{{ url }}" class="text-xl heading highlight-heading">{{ title }}</a>
+  <p class="mt-3 mb-2 text-sm text-gray-500">
+    <time datetime="{{ date | format:Y-m-d }}">{{ date }}</time>
+    under {{ category }}<a href="/category/{{ slug }}">{{ title }}</a>{{ /category }}
+  </p>
+  <p class="m-0">{{ excerpt }}</p>
 </article>

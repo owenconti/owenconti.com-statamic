@@ -8,7 +8,7 @@
     class="flex justify-between items-center py-6 md:justify-between md:space-x-10"
   >
     <div>
-      <a href="#" class="flex">
+      <a href="/" class="flex">
         {{ partial:partials/logo }}
       </a>
     </div>
@@ -24,14 +24,14 @@
 
     <nav class="hidden md:flex space-x-6">
       {{ structure:navigation }}
-        <a href="{{ url }}" class="heading text-xl text-gray-600 hover:text-gray-900">
+        <a href="{{ url }}" class="font-normal text-gray-600 hover:text-gray-900">
           {{ title }}
         </a>
       {{ /structure:navigation }}
     </nav>
   </div>
 
-  <div x-cloak class="top-0 inset-x-0 mt-6 transition transform origin-top-right md:hidden" :class="{ 'absolute' : isOpen , 'hidden' : !isOpen}" >
+  <div x-cloak class="top-0 inset-x-0 z-10 mt-6 transition transform origin-top-right md:hidden" :class="{ 'absolute' : isOpen , 'hidden' : !isOpen}" >
     <div class="relative rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white divide-y-2 divide-gray-50">
       <div class="pt-5 pb-6 px-5">
         <div class="absolute top-0 right-0 mr-3 mt-3">

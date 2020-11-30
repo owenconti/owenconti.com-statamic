@@ -4,10 +4,7 @@ collections:
   - posts
 tree:
   -
-    title: Recent
-    url: /
-  -
-    title: Categories
+    title: Blog
     url: /category
   -
     title: Bookmarks
@@ -15,6 +12,3 @@ tree:
   -
     title: Analytics
     url: /analytics
-  -
-    title: RSS
-    url: /feed

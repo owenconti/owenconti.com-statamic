@@ -1,4 +1,21 @@
 <h1 class="mb-6">Page not found</h1>
 
-<p>Try searching for what you are looking for: </p>
+<p class="mb-2">Try searching for what you are looking for: </p>
 {{ partial:partials/search }}
+
+<hr class="my-10 border-t-4 border-gray-200" />
+
+{{ collection:posts limit="5" sort="date:desc" as="posts" }}
+    {{ if no_results }}
+        <p>Aww, there are no results.</p>
+    {{ /if }}
+
+    {{ posts }}
+      {{ partial:partials/summary }}
+    {{ /posts }}
+
+    <div>
+      <p><strong>Looking for more?</strong></p>
+      <p>You can view the entire post list on the <a href="/categories">Categories</a> page.</p>
+    </div>
+{{ /collection:posts }}

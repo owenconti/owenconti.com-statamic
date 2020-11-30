@@ -1,57 +1,85 @@
 /*! purgecss start ignore */
-.content {
+.prose {
   @apply text-lg;
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply highlight-heading font-normal;
+  }
 
   img {
     @apply max-w-full shadow-lg;
   }
+
+  tbody tr {
+    border: none;
+  }
+
+  pre {
+    @apply mb-4;
+  }
+
+  code {
+    @apply inline-block bg-accent text-white text-sm p-1;
+
+    &::before {
+      content: '';
+    }
+    &::after {
+      content: '';
+    }
+  }
+
+  pre code {
+    @apply block text-sm p-4;
+  }
+
+  .gist .blob-code.blob-code-inner {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  blockquote {
+    @apply p-4 my-6 mx-0 text-gray-800 bg-gray-100 border-l-8 border-accent;
+    transform: rotate(-1deg);
+
+    p {
+      @apply m-0 p-0;
+    }
+  }
+
+  a {
+    @apply text-accent font-semibold no-underline;
+    &:hover {
+      @apply underline;
+    }
+  }
+
+  p {
+    @apply mb-4 leading-relaxed;
+  }
 }
 
 a {
-  @apply text-accent font-semibold;
+  @apply text-accent font-semibold no-underline;
   &:hover {
     @apply underline;
   }
 }
 
-p {
-  @apply mb-4 leading-relaxed;
-}
-
-pre {
-  @apply mb-4;
-}
-
-code {
-  @apply bg-light text-secondary text-sm p-1;
-}
-
-pre code {
-  @apply block text-sm p-4;
-}
-
-.gist .blob-code.blob-code-inner {
-  font-size: 14px;
-  line-height: 24px;
-}
-
-blockquote {
-  @apply p-4 my-6 mx-0 text-gray-800 bg-gray-200 border-l-4 border-secondary;
-
-  p {
-    @apply m-0 p-0;
-  }
-}
-
-ul li {
-  @apply list-disc ml-8;
-}
-ol li {
-  @apply list-decimal ml-8;
-}
-
 .heading {
   @apply font-heading tracking-widest font-normal;
+}
+
+.highlight-heading {
+  @apply text-white inline-block relative p-1;
+  transform: rotate(-1deg) translateX(-2%);
+}
+
+.highlight-heading:before{
+  content:"";
+  z-index: -1;
+  width: 104%;
+  @apply bg-accent absolute top-0 right-0 bottom-0 left-0;
 }
 
 h1 {

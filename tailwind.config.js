@@ -3,9 +3,11 @@ const config = require('@ohseesoftware/tailwind-config');
 module.exports = {
  ...config,
  purge: {
-   enabled: true,
    content: ['resources/**/*', 'content/collections/**/*']
  },
+ plugins: [
+  require('@tailwindcss/typography'),
+ ],
  variants: {
   extend: {
     borderWidth: ['last'],
