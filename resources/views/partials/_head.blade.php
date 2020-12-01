@@ -10,6 +10,7 @@
 <meta property="og:url" content="{{ $current_url }}">
 <meta property="og:image" content="{{ config('app.url') }}/images/{{ $slug ?? 'owenconti-banner' }}.png">
 <meta property="twitter:image" content="{{ config('app.url') }}/images/{{ $slug ?? 'owenconti-banner' }}.png">
+<meta property="twitter:card" content="summary_large_image">
 
 <link href="https://github.com/owenconti" rel="me">
 <link rel="webmention" href="https://webmention.io/owenconti.com/webmention" />
