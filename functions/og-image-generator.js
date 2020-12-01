@@ -23,10 +23,11 @@ exports.handler = async function(event, context) {
 
   return {
     statusCode: 200,
-    body: image,
+    body: image.toString('base64'),
     headers: {
       'Content-Type': 'image/png',
       'Cache-Control': 'public, immutable, no-transform, s-maxage=31536000, max-age=31536000'
-    }
+    },
+    isBase64Encoded
   };
 }
