@@ -28,6 +28,6 @@ exports.handler = async function(event, context) {
       'Content-Type': 'image/png',
       'Cache-Control': 'public, immutable, no-transform, s-maxage=31536000, max-age=31536000'
     },
-    isBase64Encoded
+    isBase64Encoded: true
   };
 }
