@@ -66,7 +66,8 @@ return [
 
     'urls' => [
         '/',
-        '/category'
+        '/category',
+        '/og-image-generator'
     ],
 
     /*

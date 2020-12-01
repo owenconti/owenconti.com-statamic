@@ -17,6 +17,7 @@ require('laravel-mix-svelte');
 mix.copy('resources/images', 'public/images')
   .copy('resources/fonts', 'public/fonts')
   .js('resources/js/app.js', 'public/js')
+  .svelte()
   .postCss('resources/css/app.css', 'public/css', [
     require('postcss-import'),
     tailwindcss('./tailwind.config.js'),
@@ -26,11 +27,3 @@ mix.copy('resources/images', 'public/images')
     processCssUrls: false
   })
   .version();
-
-mix.svelte();
-
-// mix.purgeCss({
-//   folders: ['resources', 'content/collections'],
-//   extensions: ['html', 'js', 'md', 'php'],
-//   whitelistPatterns: [/hljs/, /ais-/]
-// });
