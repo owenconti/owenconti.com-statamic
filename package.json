@@ -5,7 +5,7 @@
         "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
         "serve": "npx serve storage/app/static",
         "run-build-og-images": "node ./scripts/build-og-images.js",
-        "build-og-images": "npm-run-all -p serve run-build-og-images"
+        "build-og-images": "npm-run-all -p -r serve run-build-og-images"
     },
     "devDependencies": {
         "cross-env": "^5.1",

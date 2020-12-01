@@ -43,4 +43,7 @@ async function run() {
 
 Promise.all([
   run()
-]).then(process.exit);
+]).then(() => {
+  console.log('Exiting');
+  process.exit(0);
+});
