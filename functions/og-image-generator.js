@@ -26,7 +26,8 @@ exports.handler = async function(event, context) {
     body: image.toString('base64'),
     headers: {
       'Content-Type': 'image/png',
-      'Cache-Control': 'public, immutable, no-transform, s-maxage=31536000, max-age=31536000'
+      'Cache-Control': 'public, immutable, no-transform, s-maxage=31536000, max-age=31536000',
+      'ETag': btoa(url)
     },
     isBase64Encoded: true
   };

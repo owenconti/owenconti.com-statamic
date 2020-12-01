@@ -9,7 +9,7 @@
 <meta property="og:description" content="{{ $excerpt ?? "Web programming articles including tips, tricks, and tutorials on Laravel, PHP, React, Vue, MySQL and more." }}">
 <meta property="og:url" content="{{ $current_url }}">
 <meta property="og:image" content="{{ config('app.url') }}/images/owenconti-square.png">
-<meta property="twitter:image" content="{{ config('app.url') }}/og-image-generator?title={{ base64_encode($title) }}">
+<meta property="twitter:image" content="{{ config('app.url') }}/.netlify/functions/og-image-generator?url={{ config('app.url') }}/og-image-generator?title={{ base64_encode($title) }}">
 
 <link href="https://github.com/owenconti" rel="me">
 <link rel="webmention" href="https://webmention.io/owenconti.com/webmention" />
