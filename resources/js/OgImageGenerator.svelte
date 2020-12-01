@@ -1,6 +1,6 @@
 <div class="og-image bg-dark text-white text-center relative flex items-center justify-center px-4">
 	<h1 class="heading highlight-heading">{title}</h1>
-	<p class="absolute right-0 bottom-0 mr-4 mb-4 heading text-xl">owenconti.com</p>
+	<p class="absolute right-0 bottom-0 mr-10 mb-4 heading text-2xl">owenconti.com</p>
 </div>
 
 <script>
@@ -16,11 +16,15 @@
 
 <style>
   .og-image {
-    height: 617px;
+    height: 632px;
 		width: 1200px;
 	}
-	h1 {
+	.highlight-heading {
 		font-size: 90px;
 		max-width: 96%;
+		transform: rotate(-1deg);
+	}
+	.highlight-heading::before {
+		width: 100%;
 	}
 </style>
