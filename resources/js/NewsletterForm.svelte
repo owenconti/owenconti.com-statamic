@@ -14,7 +14,7 @@
   <form class="flex justify-between" on:submit|preventDefault="{handleSubmit}">
     <input type="hidden" name="workspaceId" value="3" />
     <input type="email" required name="email" placeholder="Email" class="flex-1 border-r-0 rounded-r-none input" />
-    <button type="submit" class="accent-button rounded-l-none">Sign Up</button>
+    <button type="submit" class="accent-button rounded-l-none whitespace-nowrap">Sign Up</button>
   </form>
 {/if}
 
