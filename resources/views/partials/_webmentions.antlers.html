@@ -1,13 +1,18 @@
 {{ webmentions:count url="{ current_url }/" }}
-  <section class="mt-8">
-    <p class="mt-4 mb-0">Enjoyed this post? Have a comment or feedback? <a href="https://twitter.com/intent/tweet/?text=@owenconti%20{{ current_url }}">Let me know on Twitter!</a> Or if you found an issue, <a href="https://github.com/owenconti/owenconti.com/edit/master/content/collections/posts/{{ date | format:Y-m-d }}.{{ slug }}.md">submit a pull request!</a></p>
+  <section class="mt-8 prose">
+    <h3 class="heading highlight-heading">Thanks for reading!</h3>
+    <p class="mt-2 mb-0">Did you find this post useful? <a href="https://twitter.com/intent/tweet/?text=@owenconti%20{{ current_url }}">Let me know on Twitter!</a> If you found an issue with the content, <a href="https://github.com/owenconti/owenconti.com/edit/master/content/collections/posts/{{ date | format:Y-m-d }}.{{ slug }}.md">submit a pull request!</a></p>
+    <p class="mt-0">Subscribe to my newsletter to know when I publish more content in the future.</p>
     
-    <div class="text-lg mt-4 md:flex md:justify-between">
-      <div class="mb-2 md:mb-0">❤️ Likes: <strong>{{ type:like or '0' }}</strong></div>
-      <div class="mb-2 md:mb-0">📣 Retweets: <strong>{{ type:repost or '0' }}</strong></div>
-      <div class="mb-2 md:mb-0">💬 Replies: <strong>{{ type:reply or '0' }}</strong></div>
-      <div>🙊 Mentions: <strong>{{ type:mention or '0' }}</strong></div>
+    <div class="max-w-md mt-4">
+      <div class="newsletter-form"></div>
     </div>
 
+    <div class="text-lg mt-8 md:flex md:justify-between">
+      <div class="mb-2 md:mb-0">❤️&nbsp;Likes: <strong>{{ type:like or '0' }}</strong></div>
+      <div class="mb-2 md:mb-0">📣&nbsp;Retweets: <strong>{{ type:repost or '0' }}</strong></div>
+      <div class="mb-2 md:mb-0">💬&nbsp;Replies: <strong>{{ type:reply or '0' }}</strong></div>
+      <div>🙊&nbsp;Mentions: <strong>{{ type:mention or '0' }}</strong></div>
+    </div>
   </section>
 {{ /webmentions:count }}

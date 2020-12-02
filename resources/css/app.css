@@ -1,8 +1,10 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 
+@import './button.css';
 @import './examples.css';
-@import './typography.css';
+@import './input.css';
 @import './search.css';
+@import './typography.css';
 
 @import 'tailwindcss/utilities';
