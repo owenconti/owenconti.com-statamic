@@ -1,6 +1,6 @@
-<h1 class="heading highlight-heading">Bookmarks</h1>
+<div class="prose">
+  <h1 class="heading highlight-heading">Bookmarks</h1>
 
-<div class="mt-4">
   {{ collection:bookmarks limit="500" sort="title:asc" as="bookmarks" }}
       {{ if no_results }}
           <p>Aww, there are no results.</p>
