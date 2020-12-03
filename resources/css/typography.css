@@ -71,7 +71,7 @@ a {
 }
 
 .highlight-heading {
-  @apply text-white inline-block relative p-1;
+  @apply text-white inline-block relative p-2;
   transform: rotate(-1deg) translateX(-2%);
 }
 

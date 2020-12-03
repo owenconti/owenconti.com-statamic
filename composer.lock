@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1ef8eb48abaa3834f2bb43b21aad073d",
+    "content-hash": "c0b6c216f5f69c52315a372cf8142728",
     "packages": [
         {
             "name": "algolia/algoliasearch-client-php",
@@ -5243,16 +5243,16 @@
         },
         {
             "name": "statamic/cms",
-            "version": "v3.0.31",
+            "version": "v3.0.32",
             "source": {
                 "type": "git",
                 "url": "https://github.com/statamic/cms.git",
-                "reference": "4c3e769ca8ffef26eeaf7a0361489831111b0a6b"
+                "reference": "ee6970ddb58a163b81454137bc3af7cbc559acf7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/statamic/cms/zipball/4c3e769ca8ffef26eeaf7a0361489831111b0a6b",
-                "reference": "4c3e769ca8ffef26eeaf7a0361489831111b0a6b",
+                "url": "https://api.github.com/repos/statamic/cms/zipball/ee6970ddb58a163b81454137bc3af7cbc559acf7",
+                "reference": "ee6970ddb58a163b81454137bc3af7cbc559acf7",
                 "shasum": ""
             },
             "require": {
@@ -5318,7 +5318,7 @@
             ],
             "support": {
                 "issues": "https://github.com/statamic/cms/issues",
-                "source": "https://github.com/statamic/cms/tree/v3.0.31"
+                "source": "https://github.com/statamic/cms/tree/v3.0.32"
             },
             "funding": [
                 {
@@ -5326,7 +5326,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-11-25T19:12:18+00:00"
+            "time": "2020-12-02T18:28:11+00:00"
         },
         {
             "name": "statamic/ssg",
@@ -10724,7 +10724,9 @@
     },
     "prefer-stable": true,
     "prefer-lowest": false,
-    "platform": [],
+    "platform": {
+        "php": "^7.1.3"
+    },
     "platform-dev": [],
     "plugin-api-version": "2.0.0"
 }

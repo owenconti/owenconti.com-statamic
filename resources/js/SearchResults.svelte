@@ -35,8 +35,10 @@
     {#if results.length > 0}
       {#each results as result}
         <article v-for="result in results" :key="result.id" class="pb-6 mb-6 border-b border-gray-300 last:border-0">
-          <a href="{result.url}" class="highlight-heading heading">{ result.title }</a>
-          <p class="mt-2 mb-0">{ result.excerpt }</p>
+          <a href="{result.url}" class="text-2xl highlight-heading heading">{ result.title }</a>
+          {#if result.excerpt}
+            <p class="mt-2 mb-0">{ result.excerpt }</p>
+          {/if}
         </article>
       {/each}
     {:else}
