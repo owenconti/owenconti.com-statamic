@@ -4,7 +4,7 @@
   {{ if current_uri | starts_with:/post }}
     {{ category }}
       {{ if entries_count > 1 }}
-        <div class="pt-6 mt-6 border-t-4 border-gray-200">
+        <div class="pt-6 mt-6 border-t-4 border-gray-300">
           {{ entries limit="3" sort="date:desc" status:is="published" }}
             {{ if page:id !== id }}
               {{ partial:partials/summary }}
@@ -17,7 +17,7 @@
     {{ /category }}
   {{ /if }}
 
-  <div class="mt-6 pt-6 border-t-4 border-gray-200">
+  <div class="mt-6 pt-6 border-t-4 border-gray-300">
     <h3 class="m-0">Categories</h3>
 
     {{ taxonomy:category }}
@@ -27,13 +27,13 @@
     {{ /taxonomy:category }}
   </div>
 
-  <div class="mt-6 pt-6 border-t-4 border-gray-200">
+  <div class="mt-6 pt-6 border-t-4 border-gray-300">
     <h3 class="mb-2">Newsletter</h3>
     <p class="mb-2 text-gray-600 text-sm">Subscribe to my newsletter to receive infrequent updates on content I've published.</p>
     <div class="newsletter-form"></div>
   </div>
 
-  <div class="mt-6 pt-6 border-t-4 border-gray-200">
+  <div class="mt-6 pt-6 border-t-4 border-gray-300">
     <h3 class="mb-2">Links</h3>
     <div class="flex flex-wrap justify-between">
       <a href="https://ohsee.link/twitter" class="accent-button inline-flex items-center">
