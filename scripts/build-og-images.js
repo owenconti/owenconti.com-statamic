@@ -4,7 +4,15 @@ const http = require('http');
 
 const host = 'http://localhost:5000';
 
+async function sleep(milliseconds) {
+  return new Promise(res => {
+    setTimeout(res, milliseconds);
+  });
+}
+
 async function run() {
+  await sleep(10000);
+
   const browser = await puppeteer.launch();
   
   async function generateImage(path) {
