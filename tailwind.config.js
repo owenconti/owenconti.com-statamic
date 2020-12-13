@@ -2,6 +2,7 @@ const config = require('@ohseesoftware/tailwind-config');
 
 module.exports = {
  ...config,
+ darkMode: 'media',
  purge: {
    content: ['resources/**/*', 'content/collections/**/*']
  },
@@ -11,6 +12,7 @@ module.exports = {
  variants: {
   extend: {
     borderWidth: ['last'],
+    typography: ['dark']
   }
 },
  theme: {

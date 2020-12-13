@@ -39,7 +39,7 @@
   }
 
   blockquote {
-    @apply p-4 my-6 mx-0 text-gray-800 bg-gray-100 border-l-8 border-accent;
+    @apply p-4 my-6 mx-0 text-gray-800 bg-gray-100 dark:bg-dark-lighten dark:text-light border-l-8 border-accent;
     transform: rotate(-1deg);
 
     p {
@@ -83,21 +83,31 @@ a {
 }
 
 h1 {
-  @apply heading text-dark text-3xl leading-tight mb-2;
+  @apply heading text-3xl leading-tight mb-2;
 }
 h2 {
-  @apply heading text-dark text-2xl mb-4 mt-6;
+  @apply heading text-2xl mb-4 mt-6;
 }
 h3 {
-  @apply heading text-dark text-xl mb-4;
+  @apply heading text-xl mb-4;
 }
 h4 {
-  @apply heading text-dark text-lg mb-3;
+  @apply heading text-lg mb-3;
 }
 
 @media (min-width: 768px) {
   blockquote {
     @apply ml-10;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .prose {
+    @apply text-light;
+
+    strong {
+      @apply text-white;
+    }
   }
 }
 

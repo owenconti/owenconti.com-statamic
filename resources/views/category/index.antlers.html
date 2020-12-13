@@ -1,7 +1,7 @@
 {{ taxonomy:category }}
   {{ if !entries | is_empty }}
     <div>
-      <h3 class="mb-4 mt-0 text-gray-400" id="{{ slug }}">{{ title }}</h3>
+      <h3 class="mb-4 mt-0 text-gray-500 dark:text-gray-300" id="{{ slug }}">{{ title }}</h3>
 
       <div>
         {{ entries sort="date:desc" }}
