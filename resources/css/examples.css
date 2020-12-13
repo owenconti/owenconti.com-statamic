@@ -1,7 +1,0 @@
-.example {
-  @apply p-4 pt-3 mb-4 border border-gray-300 bg-white rounded shadow-inner;
-
-  h4 {
-    @apply heading text-gray-400 m-0 mb-4;
-  }
-}

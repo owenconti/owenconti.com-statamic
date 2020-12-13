@@ -31,6 +31,12 @@ return [
             'fields' => ['title', 'excerpt', 'url'],
         ],
 
+        'local' => [
+            'driver' => 'local',
+            'searchables' => ['collection:posts'],
+            'fields' => ['title', 'excerpt', 'url'],
+        ],
+
         // 'blog' => [
         //     'driver' => 'local',
         //     'searchables' => 'collection:blog',

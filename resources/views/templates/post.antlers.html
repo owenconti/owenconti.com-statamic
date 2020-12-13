@@ -21,8 +21,8 @@
     {{ elseif type == "gist_content" }}
       {{ partial src="partials/gist_content" }}
     {{ elseif type == "example" }}
-      <div class="example">
-        <h4>Example</h4>
+      <div class="p-4 pt-3 mb-4 border border-gray-300 dark:border-gray-600 bg-white dark:bg-dark-lighten rounded shadow-inner">
+        <div class="font-heading tracking-widest font-normal text-gray-400 dark:text-gray-500 m-0 mb-4">Example</div>
         <div>
           {{ example_content }}
         </div>

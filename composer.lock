@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c4d5227c259956913eae2dac01b59779",
+    "content-hash": "6cb21b1b8a29330d721867ae94669372",
     "packages": [
         {
             "name": "algolia/algoliasearch-client-php",
@@ -3246,23 +3246,23 @@
         },
         {
             "name": "ohseesoftware/oh-see-gists",
-            "version": "v1.2.1",
+            "version": "v2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ohseesoftware/oh-see-gists.git",
-                "reference": "a9255b01a4439e1024b58aae389d6255ebcd6433"
+                "reference": "f4083fc4325d03a999bd64ad4f4635b1632e5a0e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ohseesoftware/oh-see-gists/zipball/a9255b01a4439e1024b58aae389d6255ebcd6433",
-                "reference": "a9255b01a4439e1024b58aae389d6255ebcd6433",
+                "url": "https://api.github.com/repos/ohseesoftware/oh-see-gists/zipball/f4083fc4325d03a999bd64ad4f4635b1632e5a0e",
+                "reference": "f4083fc4325d03a999bd64ad4f4635b1632e5a0e",
                 "shasum": ""
             },
             "require": {
                 "graham-campbell/github": "^9.2@dev",
                 "php-http/guzzle6-adapter": "^2.0",
                 "ramsey/uuid": "^3.0",
-                "statamic/cms": "^3.0@beta"
+                "statamic/cms": "3.0.34"
             },
             "require-dev": {
                 "nunomaduro/collision": "^4.2",
@@ -3295,9 +3295,9 @@
             "description": "A Statamic v3 add-on to use GitHub's Gists to host code blocks.",
             "support": {
                 "issues": "https://github.com/ohseesoftware/oh-see-gists/issues",
-                "source": "https://github.com/ohseesoftware/oh-see-gists/tree/v1.2.1"
+                "source": "https://github.com/ohseesoftware/oh-see-gists/tree/v2.0.0"
             },
-            "time": "2020-05-23T21:18:43+00:00"
+            "time": "2020-12-13T17:40:04+00:00"
         },
         {
             "name": "opis/closure",
