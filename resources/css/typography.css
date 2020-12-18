@@ -19,7 +19,7 @@
   }
 
   code {
-    @apply inline-block bg-accent text-white text-sm p-1;
+    @apply inline-block bg-gray-300 dark:bg-gray-700 text-gray-700 dark:text-gray-300 text-sm p-1;
 
     &::before {
       content: '';
@@ -55,7 +55,7 @@
   }
 
   p {
-    @apply mb-4 leading-relaxed;
+    @apply mb-4 leading-7;
   }
 }
 
