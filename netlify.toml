@@ -2,3 +2,8 @@
   functions = 'functions'
   publish = 'storage/app/static'
   command = 'npm run production && composer install && php please search:update default && php please ssg:generate && npm run build-og-images'
+
+[[headers]]
+  for = "/feed"
+  [headers.values]
+	  Content-Type = "application/rss+xml"
