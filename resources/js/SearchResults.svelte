@@ -1,6 +1,7 @@
 <script>
 	import { onMount } from 'svelte';
 
+  let loaded = false;
 	let results = [];
 	let query = '';
 
@@ -18,6 +19,7 @@
         .then((response) => response.json())
         .then((data) => {
           results = [];
+          loaded = true;
 
           if (data.hits.length) {
             results = data.hits;
@@ -32,7 +34,9 @@
   {/if}
 
   <div>
-    {#if results.length > 0}
+    {#if !loaded}
+      <p>Loading search results...</p>
+    {:else if results.length > 0}
       {#each results as result}
         <article v-for="result in results" :key="result.id" class="pb-6 mb-6 border-b border-gray-300 last:border-0">
           <a href="{result.url}" class="text-2xl highlight-heading heading">{ result.title }</a>

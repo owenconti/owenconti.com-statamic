@@ -4,17 +4,8 @@ module.exports = {
  ...config,
  darkMode: 'media',
  purge: {
-   content: ['resources/**/*', 'content/collections/**/*']
+   content: ['resources/js/**/*', 'resources/views/**/*', 'content/collections/**/*']
  },
- plugins: [
-  require('@tailwindcss/typography'),
- ],
- variants: {
-  extend: {
-    borderWidth: ['last'],
-    typography: ['dark']
-  }
-},
  theme: {
   ...config.theme,
   colors: {

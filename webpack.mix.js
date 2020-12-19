@@ -17,6 +17,8 @@ require('laravel-mix-svelte');
 mix.copy('resources/images', 'public/images')
   .copy('resources/fonts', 'public/fonts')
   .js('resources/js/app.js', 'public/js')
+  .js('resources/js/search-results.js', 'public/js')
+  .js('resources/js/og-image-generator.js', 'public/js')
   .svelte()
   .postCss('resources/css/app.css', 'public/css', [
     require('postcss-import'),
