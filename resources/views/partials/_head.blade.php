@@ -16,11 +16,11 @@
 <link rel="webmention" href="https://webmention.io/owenconti.com/webmention" />
 <link rel="pingback" href="https://webmention.io/owenconti.com/xmlrpc" />
 
-<link rel="icon" href="{{ asset('/favicon.svg') }}" sizes="any" type="image/svg+xml">
-<link rel="icon" href="{{ asset('/favicon.png') }}" type="image/png">
+<link rel="icon" href="{{ asset('/favicon.svg') }}" sizes="any" type="image/svg+xml" />
+<link rel="icon" href="{{ asset('/favicon.png') }}" type="image/png" />
 
-<link media="all" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet"> 
-<link media="all" href="https://fonts.googleapis.com/css2?family=Bangers:wght@400&display=swap" rel="stylesheet"> 
+<link rel="preload" as="style" onload="this.rel='stylesheet'" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" />
+<link rel="preload" as="style" onload="this.rel='stylesheet'" href="https://fonts.googleapis.com/css2?family=Bangers:wght@400&display=swap" /> 
 
 <style type="text/css">{!! readfile(public_path('css/app.css')) !!}</style>
 
