@@ -46,7 +46,8 @@ return [
         public_path('assets') => 'assets',
         public_path('favicon.png') => 'favicon.png',
         public_path('favicon.svg') => 'favicon.svg',
-        public_path('robots.txt') => 'robots.txt'
+        public_path('robots.txt') => 'robots.txt',
+        public_path('_redirects') => '_redirects'
     ],
 
     'symlinks' => [
