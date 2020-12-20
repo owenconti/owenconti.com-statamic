@@ -57,6 +57,16 @@
   p {
     @apply mb-4 leading-7;
   }
+
+  ul, ol {
+    @apply pl-4 ml-4;
+  }
+  ul li {
+    @apply list-disc;
+  }
+  ol li {
+    @apply list-decimal;
+  }
 }
 
 a {
