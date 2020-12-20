@@ -1,13 +1,13 @@
 {#if status === 'success'}
   <div>
     <h3 class="text-green heading mb-1">Success!</h3>
-    <p class="text-sm text-gray-600">Thanks for subscribing, you'll receive a confirmation email shortly.</p>
+    <p class="text-sm text-gray-600 dark:text-gray-300">Thanks for subscribing, you'll receive a confirmation email shortly.</p>
   </div>
 {:else}
   {#if status === 'error'}
     <div>
       <h3 class="text-red heading mb-1">Error!</h3>
-      <p class="text-sm text-gray-600">{message}</p>
+      <p class="text-sm  text-gray-600 dark:text-gray-300">{message}</p>
     </div>
   {/if}
 
