@@ -4,21 +4,19 @@
     <title>{{ title ?? 'Home' }} | Owen Conti</title>
     {{ partial:partials/head }}
   </head>
-  <body class="text-base text-dark bg-white dark:bg-dark dark:text-light border-t-4 border-accent">
-    <div class="w-full max-w-6xl mx-auto px-6">
-      {{ partial:partials/header }}
+  <body class="text-base text-dark bg-white dark:bg-dark dark:text-light">
+    {{ partial:partials/header }}
 
-      <div class="flex mt-6">
-        <div class="w-64 lg:w-full lg:max-w-xs hidden md:block">
-          {{ partial:partials/sidebar }}
-        </div>
-        <div class="md:pl-16 flex-1 max-w-full w-0">
-          {{ template_content }}
-        </div>
+    <div class="w-full max-w-6xl mx-auto px-6 flex mt-6">
+      <div class="w-64 lg:w-full lg:max-w-xs hidden md:block">
+        {{ partial:partials/sidebar }}
       </div>
-
-      {{ partial:partials/footer }}
+      <div class="md:pl-16 flex-1 max-w-full w-0">
+        {{ template_content }}
+      </div>
     </div>
+
+    {{ partial:partials/footer }}
 
     <script async src="{{ mix src='/js/app.js' }}"></script>
 
