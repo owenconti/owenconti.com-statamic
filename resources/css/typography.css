@@ -99,7 +99,7 @@ h2 {
   @apply heading text-2xl mb-4 mt-6;
 }
 h3 {
-  @apply heading text-xl mb-4;
+  @apply heading text-xl mb-4 mt-4;
 }
 h4 {
   @apply heading text-lg mb-3;
