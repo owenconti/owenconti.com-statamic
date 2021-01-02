@@ -8,7 +8,7 @@
 	onMount(async () => {
 		query = new URLSearchParams(window.location.search).get('q');
       const host = `https://${window.algoliaAppId}-dsn.algolia.net`;
-      const url = `${host}/1/indexes/default?query=${encodeURIComponent(query)}`;
+      const url = `${host}/1/indexes/default?query=${encodeURIComponent(query)}&filters=published!=0`;
 
       fetch(url, {
         headers: {

@@ -28,13 +28,13 @@ return [
         'default' => [
             'driver' => 'algolia',
             'searchables' => ['collection:posts'],
-            'fields' => ['title', 'excerpt', 'url'],
+            'fields' => ['title', 'excerpt', 'url', 'published'],
         ],
 
         'local' => [
             'driver' => 'local',
             'searchables' => ['collection:posts'],
-            'fields' => ['title', 'excerpt', 'url'],
+            'fields' => ['title', 'excerpt', 'url', 'published'],
         ],
 
         // 'blog' => [
