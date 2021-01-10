@@ -33,9 +33,13 @@
     @apply block text-sm p-4;
   }
 
-  .gist .blob-code.blob-code-inner {
-    font-size: 14px;
-    line-height: 24px;
+  .gist {
+    @apply mb-8;
+
+    .blob-code.blob-code-inner {
+      font-size: 14px;
+      line-height: 24px;
+    }
   }
 
   blockquote {
@@ -55,7 +59,7 @@
   }
 
   p {
-    @apply mb-4 leading-7;
+    @apply mb-4 leading-8;
   }
 
   ul, ol {
