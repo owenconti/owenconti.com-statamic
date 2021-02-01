@@ -47,7 +47,7 @@ return [
     */
 
     'vanity' => [
-        // '/promo' => '/blog/2019/09/big-sale-on-hot-dogs',
+        // '/goals' => '/posts/goals-for-2021/'
     ],
 
     /*
