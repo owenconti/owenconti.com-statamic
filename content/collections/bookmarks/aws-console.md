@@ -1,6 +1,6 @@
 ---
 title: 'AWS Console'
-description: 'Login back for the AWS Console'
+description: 'Login link for the AWS Console'
 bookmark_url: 'https://aws.amazon.com/console/'
 updated_by: 197c1509-8dff-4d72-9898-334084519619
 updated_at: 1609899205
