@@ -19,7 +19,7 @@
 	function onClick() {
     const $html = document.getElementsByTagName('html')[0];
 
-    if (localStorage.darkModeEnabled === 'true') {
+    if (isDarkMode) {
       localStorage.darkModeEnabled = 'false';
       $html.classList.remove('dark');
     } else {
