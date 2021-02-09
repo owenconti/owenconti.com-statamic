@@ -33,3 +33,19 @@
     --osm-accent: {{ $accentColor }};
   }
 </style>
+
+<script type="text/javascript">
+const $html = document.getElementsByTagName('html')[0];
+
+const hasPreference = !!localStorage.darkModeEnabled;
+const preferenceDarkMode = localStorage.darkModeEnabled === 'true';
+const osDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+const darkMode = hasPreference ? preferenceDarkMode : osDarkMode;
+
+if (darkMode) {
+  $html.classList.add('dark');
+} else {
+  $html.classList.remove('dark');
+}
+</script>

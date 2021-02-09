@@ -1,11 +1,18 @@
 {{ webmentions:count url="{ current_url }/" }}
   <section class="mt-8 prose">
     <h3 class="heading highlight-heading">Thanks for reading!</h3>
-    <p class="mt-2 mb-0">Did you find this post useful? <a href="https://twitter.com/intent/tweet/?text=@owenconti%20{{ current_url }}">Let me know on Twitter!</a> If you found an issue with the content, <a href="https://github.com/owenconti/owenconti.com/edit/master/content/collections/posts/{{ date | format:Y-m-d }}.{{ slug }}.md">submit a pull request!</a></p>
-    <p class="mt-0">Subscribe to my newsletter to know when I publish more content in the future.</p>
-    
-    <div class="max-w-md mt-4">
-      <div class="newsletter-form"></div>
+
+    <div class="md:flex mt-4">
+      <img src="/images/avatar.jpg" class="h-32 mx-auto md:mx-0 md:mr-6 rounded-full border-2 border-white" />
+
+      <div class="mt-4 md:mt-0">
+        <p class="mb-0">Did you find this post useful? <a href="https://twitter.com/intent/tweet/?text=@owenconti%20{{ current_url }}">Let me know on Twitter!</a> If you found an issue with the content, <a href="https://github.com/owenconti/owenconti.com/edit/master/content/collections/posts/{{ date | format:Y-m-d }}.{{ slug }}.md">submit a pull request!</a></p>
+        <p class="mt-4">Subscribe to my newsletter to know when I publish more content in the future.</p>
+        
+        <div class="max-w-md mt-4">
+          <div class="newsletter-form"></div>
+        </div>
+      </div>
     </div>
 
     <div class="text-lg mt-8 md:flex md:justify-between">

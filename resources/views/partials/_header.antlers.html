@@ -9,8 +9,8 @@
     <div
       class="flex justify-between items-center py-6 md:justify-between md:space-x-10"
     >
-      <div>
-        <a href="/" class="flex" aria-label="Owen Conti">
+      <div class="w-64 lg:w-full lg:max-w-xs">
+        <a href="/" class="flex justify-between items-center" aria-label="Owen Conti">
           {{ partial:partials/logo }}
         </a>
       </div>
@@ -24,13 +24,16 @@
         </button>
       </div>
   
-      <nav class="hidden md:flex space-x-6">
-        {{ structure:navigation }}
-          <a href="{{ url }}" class="font-normal text-gray-800 hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-500">
-            {{ title }}
-          </a>
-        {{ /structure:navigation }}
-      </nav>
+      <div class="h-10 p-2 md:h-auto md:p-0">
+        <nav class="hidden md:inline-flex space-x-6">
+          {{ structure:navigation }}
+            <a href="{{ url }}" class="font-normal text-gray-800 hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-500">
+              {{ title }}
+            </a>
+          {{ /structure:navigation }}
+        </nav>
+        <div id="dark-mode-button" class="inline-block ml-2 md:ml-4 align-middle"></div>
+      </div>
     </div>
   
     <div x-cloak class="top-0 inset-x-0 z-10 mt-6 transition transform origin-top-right md:hidden" :class="{ 'absolute' : isOpen , 'hidden' : !isOpen}" >

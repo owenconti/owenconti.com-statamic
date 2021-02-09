@@ -2,7 +2,7 @@ const config = require('@ohseesoftware/tailwind-config');
 
 module.exports = {
  ...config,
- darkMode: 'media',
+ darkMode: 'class',
  purge: {
    content: ['resources/js/**/*', 'resources/views/**/*', 'content/collections/**/*']
  },
