@@ -19,7 +19,7 @@
   }
 
   code {
-    @apply inline-block bg-gray-300 dark:bg-gray-700 text-gray-700 dark:text-gray-300 text-sm p-1;
+    @apply inline-block bg-gray-300 text-gray-700 text-sm p-1;
 
     &::before {
       content: '';
@@ -43,7 +43,7 @@
   }
 
   blockquote {
-    @apply p-4 my-6 mx-0 text-gray-800 bg-gray-100 dark:bg-dark-lighten dark:text-light border-l-8 border-accent;
+    @apply p-4 my-6 mx-0 text-gray-800 bg-gray-100 border-l-8 border-accent;
     transform: rotate(-1deg);
 
     p {
@@ -115,12 +115,20 @@ h4 {
   }
 }
 
-@media (prefers-color-scheme: dark) {
+html.dark {
   .prose {
     @apply text-light;
 
     strong {
       @apply text-white;
+    }
+
+    code {
+      @apply bg-gray-700 text-gray-300;
+    }
+
+    blockquote {
+      @apply bg-dark-lighten text-light;
     }
   }
 }
