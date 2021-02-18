@@ -11,8 +11,8 @@
       {{ collection:posts }}
       <item>
           <title>{{ title | cdata }}</title>
-          <link>{{ permalink }}</link>
-          <guid>{{ permalink }}</guid>
+          <link>{{ permalink }}/</link>
+          <guid>{{ permalink }}/</guid>
           <pubDate>{{ date format="r" }}</pubDate>
           <description>{{ excerpt | full_urls | cdata }}</description>
       </item>
