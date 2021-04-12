@@ -2,16 +2,3 @@ title: Navigation
 collections:
   - pages
   - posts
-tree:
-  -
-    title: Blog
-    url: /category
-  -
-    title: Bookmarks
-    url: /bookmarks
-  -
-    title: Analytics
-    url: /analytics
-  -
-    title: RSS
-    url: /rss
