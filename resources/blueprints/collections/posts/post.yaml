@@ -4,13 +4,20 @@ sections:
     display: Main
     fields:
       -
+        handle: title
+        field:
+          type: text
+          required: true
+      -
         handle: category
         field:
-          max_items: 1
-          mode: select
           type: terms
-          localizable: false
+          taxonomies:
+            - category
           display: Category
+          mode: select
+          max_items: 1
+          localizable: false
           validate: required
       -
         handle: video
@@ -58,7 +65,7 @@ sections:
             gist_content:
               display: Gist
               fields:
-                - 
+                -
                   import: gist_block
             example:
               display: Example
@@ -69,3 +76,18 @@ sections:
                     type: textarea
                     localizable: false
                     display: 'Example Content'
+  sidebar:
+    fields:
+      -
+        handle: slug
+        field:
+          type: slug
+          required: true
+          localizable: true
+          validate:
+            - 'unique_entry_value:{collection},{id},{site}'
+      -
+        handle: date
+        field:
+          type: date
+          required: true

@@ -4,6 +4,11 @@ sections:
     display: Main
     fields:
       -
+        handle: title
+        field:
+          type: text
+          required: true
+      -
         handle: content
         field:
           buttons:
@@ -32,3 +37,13 @@ sections:
           type: bard
           localizable: false
           display: Content
+  sidebar:
+    fields:
+      -
+        handle: slug
+        field:
+          type: slug
+          required: true
+          localizable: true
+          validate:
+            - 'unique_entry_value:{collection},{id},{site}'
