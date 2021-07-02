@@ -85,14 +85,12 @@ a {
 }
 
 .highlight-heading {
-  @apply text-white inline-block relative p-2;
-  transform: rotate(-1deg) translateX(-2%);
+  @apply text-white inline-block relative px-2 py-1;
 }
 
 .highlight-heading:before{
   content:"";
   z-index: -1;
-  width: 104%;
   @apply bg-accent absolute top-0 right-0 bottom-0 left-0;
 }
 

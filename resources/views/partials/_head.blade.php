@@ -25,7 +25,7 @@
 <style type="text/css">{!! readfile(public_path('css/app.css')) !!}</style>
 
 @php
-  $accentColors = ['#AC6BFF', '#3B82F6', '#14B8A6', '#F97316', '#EF4444', '#DB2777'];
+  $accentColors = ['#B353FF', '#3B82F6', '#14B8A6', '#FC8800', '#FF1E1E', '#F50A73'];
   $accentColor = collect($accentColors)->random();
 @endphp
 <style type="text/css">
