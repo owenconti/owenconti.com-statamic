@@ -115,7 +115,7 @@ h4 {
 
 html.dark {
   .prose {
-    @apply text-light;
+    @apply text-brand-light;
 
     strong {
       @apply text-white;
@@ -126,7 +126,7 @@ html.dark {
     }
 
     blockquote {
-      @apply bg-dark-lighten text-light;
+      @apply bg-brand-dark-lighten text-brand-light;
     }
   }
 }

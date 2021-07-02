@@ -1,6 +1,6 @@
-<div class="og-image bg-dark text-white text-center relative flex items-center justify-center px-4">
+<div class="relative flex items-center justify-center px-4 text-center text-white og-image bg-brand-dark">
 	<h1 class="heading highlight-heading">{title}</h1>
-	<p class="absolute right-0 bottom-0 mr-10 mb-4 heading text-2xl">owenconti.com</p>
+	<p class="absolute bottom-0 right-0 mb-4 mr-10 text-2xl heading">owenconti.com</p>
 </div>
 
 <script>

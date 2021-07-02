@@ -1,13 +1,13 @@
 <h1 class="heading highlight-heading">{{ title }}</h1>
 
-<div class="text-sm text-gray-700 dark:text-gray-400 mb-8">
+<div class="mb-8 text-sm text-gray-700 dark:text-gray-400">
   <p class="mt-2 mb-0">
-    Published <time datetime="{{ date | format:Y-m-d }}">{{ date }}</time> under {{ category }}<a href="/category/{{ slug }}" class="text-gray-700 dark:text-gray-300 font-bold">{{ title }}</a>{{ /category }}.
+    Published <time datetime="{{ date | format:Y-m-d }}">{{ date }}</time> under {{ category }}<a href="/category/{{ slug }}" class="font-bold text-gray-700 dark:text-gray-300">{{ title }}</a>{{ /category }}.
   </p>
 </div>
 
 {{ if video}}
-  <a href="#video" class="block text-center font-semibold text-accent mb-10 p-4">
+  <a href="#video" class="block p-4 mb-10 font-semibold text-center text-accent">
     📺&nbsp;&nbsp;Click here to skip to the video attached to this post&nbsp;&nbsp;👇
   </a>
 {{ /if }}
@@ -21,8 +21,8 @@
     {{ elseif type == "gist_content" }}
       {{ partial src="partials/gist_content" }}
     {{ elseif type == "example" }}
-      <div class="p-4 pt-3 mb-4 border border-gray-300 dark:border-gray-600 bg-white dark:bg-dark-lighten rounded shadow-inner">
-        <div class="font-heading tracking-widest font-normal text-gray-400 dark:text-gray-500 m-0 mb-4">Example</div>
+      <div class="p-4 pt-3 mb-4 bg-white border border-gray-300 rounded shadow-inner dark:border-gray-600 dark:bg-brand-dark-lighten">
+        <div class="m-0 mb-4 font-normal tracking-widest text-gray-400 font-heading dark:text-gray-500">Example</div>
         <div>
           {{ example_content }}
         </div>
@@ -33,10 +33,10 @@
 
 {{ if video}}
   <div id="video" class="my-8" style="position:relative;padding-top:56.25%;">
-    <iframe src="{{ video | embed_url }}" class="absolute top-0 right-0 bottom-0 left-0 w-full h-full"></iframe>
+    <iframe src="{{ video | embed_url }}" class="absolute top-0 bottom-0 left-0 right-0 w-full h-full"></iframe>
   </div>
 {{ /if }}
 
-<hr class="border-t-8 border-gray-300 my-8">
+<hr class="my-8 border-t-8 border-gray-300">
 
 {{ partial src="partials/webmentions" }}

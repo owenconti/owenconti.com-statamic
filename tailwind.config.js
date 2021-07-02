@@ -7,10 +7,11 @@ module.exports = {
    content: ['resources/js/**/*', 'resources/views/**/*', 'content/collections/**/*']
  },
  theme: {
-  ...config.theme,
-  colors: {
-    ...config.theme.colors,
-    accent: 'var(--osm-accent)',
+   extend: {
+    colors: {
+      ...config.theme.colors,
+      accent: 'var(--osm-accent)',
+    },
   },
   fontFamily: {
    sans: [

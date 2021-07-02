@@ -4,14 +4,14 @@
     <title>{{ title ?? 'Home' }} | Owen Conti</title>
     {{ partial:partials/head }}
   </head>
-  <body class="text-base text-dark bg-white dark:bg-dark-darken dark:text-light transition-all duration-300">
+  <body class="text-base transition-all duration-300 bg-white text-dark dark:bg-brand-dark-darken dark:text-brand-light">
     {{ partial:partials/header }}
 
-    <div class="w-full max-w-6xl mx-auto px-6 flex mt-6">
-      <div class="w-64 lg:w-full lg:max-w-xs hidden md:block">
+    <div class="flex w-full max-w-6xl px-6 mx-auto mt-6">
+      <div class="hidden w-64 lg:w-full lg:max-w-xs md:block">
         {{ partial:partials/sidebar }}
       </div>
-      <div class="md:pl-16 flex-1 max-w-full w-0">
+      <div class="flex-1 w-0 max-w-full md:pl-16">
         {{ template_content }}
       </div>
     </div>
