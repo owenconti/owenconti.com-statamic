@@ -8,8 +8,8 @@
 <meta property="og:title" content="{{ $title ?? "Owen Conti" }}">
 <meta property="og:description" content="{{ $excerpt ?? "Web programming articles including tips, tricks, and tutorials on Laravel, PHP, React, Vue, MySQL and more." }}">
 <meta property="og:url" content="{{ $current_url }}">
-<meta property="og:image" content="{{ config('app.url') }}/.netlify/functions/snap?w=1200&h=632&dpi=2&url=https://owenconti.com/og-image-generator/?title={{ base64_encode($title ?? 'Owen Conti') }}">
-<meta property="twitter:image" content="{{ config('app.url') }}/.netlify/functions/snap?w=1200&h=632&dpi=2&url=https://owenconti.com/og-image-generator/?title={{ base64_encode($title ?? 'Owen Conti') }}">
+<meta property="og:image" content="https://snaps-proxy.owenconti.workers.dev?w=1200&h=632&dpi=2&url=https://owenconti.com/og-image-generator/?title={{ base64_encode($title ?? 'Owen Conti') }}">
+<meta property="twitter:image" content="https://snaps-proxy.owenconti.workers.dev?w=1200&h=632&dpi=2&url=https://owenconti.com/og-image-generator/?title={{ base64_encode($title ?? 'Owen Conti') }}">
 <meta property="twitter:card" content="summary_large_image">
 
 <link href="https://github.com/owenconti" rel="me">
