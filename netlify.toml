@@ -1,7 +1,7 @@
 [build]
   functions = 'functions'
   publish = 'storage/app/static'
-  command = 'sed -i "s|TOKEN_PLACEHOLDER|${OHSEESNAPS_TOKEN}|g" netlify.toml && npm run production && composer install && php please search:update default && php please ssg:generate && npm run build-og-images'
+  command = 'sed -i "s|TOKEN_PLACEHOLDER|${OHSEESNAPS_TOKEN}|g" netlify.toml && npm run production && composer install && php please search:update default && php please ssg:generate'
 
 [[headers]]
   for = "/feed"
