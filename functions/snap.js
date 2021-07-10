@@ -5,7 +5,7 @@ exports.handler = async (event, context) => {
   });
 
   return { statusCode: 301, headers: {
-    Location: `https://ohseesnaps.com?${params.toString()}`,
+    Location: `https://ohseesnaps.com/api/snap?${params.toString()}`,
 } };
 };
        
