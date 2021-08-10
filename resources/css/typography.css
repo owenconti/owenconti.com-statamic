@@ -1,9 +1,9 @@
 /*! purgecss start ignore */
 .prose {
-  @apply text-lg;
+  @apply text-base;
 
   h1, h2, h3, h4, h5, h6 {
-    @apply highlight-heading font-normal;
+    @apply font-bold;
   }
 
   img {
@@ -36,6 +36,10 @@
   .gist {
     @apply mb-8;
 
+    .gist-meta a {
+      @apply bg-transparent;
+    }
+
     .blob-code.blob-code-inner {
       font-size: 14px;
       line-height: 24px;
@@ -51,14 +55,14 @@
   }
 
   a {
-    @apply text-accent font-semibold no-underline;
+    @apply bg-accent text-white p-0.5 font-semibold no-underline rounded;
     &:hover {
       @apply underline;
     }
   }
 
   p {
-    @apply mb-4 leading-8;
+    @apply mb-4 leading-7;
   }
 
   ul, ol {
@@ -80,30 +84,20 @@ a {
 }
 
 .heading {
-  @apply font-heading tracking-widest font-normal;
-}
-
-.highlight-heading {
-  @apply text-white inline-block relative px-2 py-1;
-}
-
-.highlight-heading:before{
-  content:"";
-  z-index: -1;
-  @apply bg-accent absolute top-0 right-0 bottom-0 left-0;
+  @apply font-bold text-brand-dark dark:text-brand-light;
 }
 
 h1 {
-  @apply heading text-3xl leading-tight mb-2;
+  @apply text-3xl leading-tight mb-2;
 }
 h2 {
-  @apply heading text-2xl mb-4 mt-6;
+  @apply text-2xl mb-4 mt-8;
 }
 h3 {
-  @apply heading text-xl mb-4 mt-4;
+  @apply text-xl mb-4 mt-6;
 }
 h4 {
-  @apply heading text-lg mb-3;
+  @apply text-lg mb-3;
 }
 
 @media (min-width: 768px) {
